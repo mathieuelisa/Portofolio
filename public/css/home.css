@@ -15,6 +15,11 @@
   src: url("/polices/HighCruiser.otf");
 }
 
+@font-face {
+  font-family: "Azonix";
+  src: url("/polices/Azonix.otf");
+}
+
 body {
   color: #acacac;
 }
@@ -30,19 +35,126 @@ p {
   margin: 10px 20px 10px 0px;
 }
 
+/* Cursor */
+
+.cursor {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #acacac;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 99;
+  transition: 200ms ease-out;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.black {
+  position: absolute;
+  border: 2px solid #222222;
+  width: 70px;
+  height: 70px;
+  transform: translate(-20px, -20px);
+}
+
+.cursorMail{
+  position: absolute;
+  border: 2px solid #acacac;
+  width: 70px;
+  height: 70px;
+  transform: translate(-20px, -20px);
+  cursor: none;
+}
+
+.expand {
+  animation: pulse2 0.9s infinite ease-out;
+  border: 1px solid #acacac;
+}
+
+@keyframes pulse2 {
+  0% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+/* Button for go back to the top */
+
+.buttonScroll {
+  width: 87px;
+  height: 58px;
+  position: fixed;
+  bottom: 28px;
+  right: 71px;
+  z-index: 99;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.topButtonScroll {
+  position: fixed;
+  width: -38px;
+  bottom: 79px;
+  right: 72px;
+  height: 2px;
+  z-index: 99;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.showBtn {
+  opacity: 1;
+}
+
+.buttonScrollMovement {
+  margin-top: 15px;
+  animation: slidein 0.7s infinite alternate;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(10px);
+  }
+}
+
+/* Custom scrollBar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #222222;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #777778;
+
+  border-radius: 6px;
+}
 /* First Part */
 
 .container {
-  height: 1500px;
+  height: 100vh;
   width: 100%;
   display: flex;
   background-color: #222222;
   position: relative;
+  background: linear-gradient(#1c1b1b, #222222);
 }
 
 .bloc-container1 {
   width: 30%;
-  background-color: #222222;
 }
 
 .bloc-container2 {
@@ -62,11 +174,50 @@ p {
 .scroll-bar {
   position: fixed;
   transform: rotate(-90deg);
-  margin-top: 50vh;
-  margin-left: 10px;
+  margin-top: 356px;
+  margin-left: -11px;
   z-index: 99;
   color: #d6d6d6;
-  font-size: 12px;
+  font-size: 13px;
+  mix-blend-mode: difference;
+}
+
+.myBar {
+  display: block;
+  position: fixed;
+  width: 7px;
+  height: 224px;
+  border: 1px solid #d6d6d6;
+  left: 0;
+  border-radius: 11px;
+  margin-top: 251px;
+  z-index: 99;
+  mix-blend-mode: difference;
+  opacity: 0.5;
+  cursor: default;
+}
+
+.myBar::after{
+  content: "";
+  display: block;
+  position: fixed;
+  height: 222px;
+  width: 5px;
+  background-color: yellow;
+  /* transition: all 1s ease; */
+  /* animation: contentBar 0.7s infinite alternate; */
+}
+
+@keyframes contentBar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(40px);
+  }
 }
 
 .title-first-container {
@@ -98,33 +249,45 @@ p {
 }
 
 .main-second-container {
-  height: 600px;
+  height: 110vh;
+  padding: 60px 60px 0 60px;
   width: 100%;
   background-color: #222222;
-  position: absolute;
-  bottom: 70px;
 }
 
 .title-second-container {
-  color: aliceblue;
+  color: #dbdbdb;
   font-family: "HighCruiser";
   font-size: 5vh;
   width: 60%;
-  margin-left: 90px;
+  margin-left: 50px;
 }
 
 .text-second-container {
-  width: 50%;
-  height: 230px;
-  margin-left: 292px;
+  height: 280px;
+  margin: 50px 300px 0 390px;
 }
 
-/* Third Part */
+.arrowImg {
+  position: relative;
+  width: 170px;
+  height: 25px;
+  margin: 0 auto;
+  top: 70px;
+  opacity: 0.5;
+}
+
+.arrowImg img {
+  height: 100%;
+}
+
+/* Third Part & First project */
 
 .third-container {
-  height: 100vh;
-  background-color: black;
+  height: 140vh;
+  background-color: #222222;
   position: relative;
+  overflow: hidden;
 }
 
 .first-title-project {
@@ -133,18 +296,389 @@ p {
   position: absolute;
   top: 56px;
   left: 78px;
-  background-color: brown;
+  background-color: #222222;
 }
 
 .number {
-  font-size: 200px;
-  font-family: "HighCruiser";
+  font-size: 300px;
+  font-family: "Azonix";
+  -webkit-text-stroke: 1px #dbdbdb;
+  color: #222222;
 }
 
 .title-project {
   position: absolute;
-  top: 150px;
+  top: 157px;
   left: 45px;
-  font-size: 3vw;
+  font-size: 46px;
   font-family: "HighCruiser";
+  z-index: 99;
+}
+
+.mockup-project1 {
+  position: absolute;
+  height: 600px;
+  width: 933px;
+  right: -90px;
+  bottom: -20px;
+}
+
+/* Buttons (Get more infos) */
+
+.wrapper-button-project1 {
+  position: absolute;
+  top: 180px;
+  left: 550px;
+  transform: translate(-50%, -50%);
+}
+
+.button1 {
+  display: block;
+  width: 220px;
+  height: 60px;
+  border-radius: 8px;
+  line-height: 40px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #acacac;
+  border: 1px solid #acacac;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  font-size: 12px;
+}
+
+.button1 span {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  top: 7px;
+}
+
+.button1:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #acacac;
+  transition: all 0.35s;
+  border-radius: 7px;
+}
+
+.button1:hover {
+  color: black;
+}
+
+.button1:hover:after {
+  width: 100%;
+}
+
+/* Fourth part & second project */
+
+.fourth-container {
+  height: 140vh;
+  background-color: #222222;
+  position: relative;
+  overflow: hidden;
+}
+
+.second-title-project {
+  height: 280px;
+  width: 460px;
+  position: absolute;
+  top: 56px;
+  right: 100px;
+  background-color: #222222;
+}
+
+.mockup-project2 {
+  position: absolute;
+  height: 600px;
+  bottom: -30px;
+}
+
+.wrapper-button-project2 {
+  position: absolute;
+  top: 143px;
+  right: 460px;
+  transform: translate(-50%, -50%);
+}
+
+.button2 {
+  display: block;
+  width: 220px;
+  height: 60px;
+  border-radius: 8px;
+  line-height: 40px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #acacac;
+  border: 1px solid #acacac;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  font-size: 12px;
+}
+
+.button2 span {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  top: 7px;
+}
+
+.button2:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #acacac;
+  transition: all 0.35s;
+  border-radius: 7px;
+}
+
+.button2:hover {
+  color: black;
+}
+
+.button2:hover:after {
+  width: 100%;
+}
+
+/* Fifth part & third project */
+
+.fifth-container {
+  height: 160vh;
+  background-color: #222222;
+  position: relative;
+  overflow: hidden;
+}
+
+.third-title-project {
+  height: 280px;
+  width: 430px;
+  position: absolute;
+  top: 56px;
+  left: 78px;
+  background-color: #222222;
+}
+
+.wrapper-button-project3 {
+  position: absolute;
+  top: 288px;
+  left: 660px;
+  transform: translate(-50%, -50%);
+}
+
+.button3 {
+  display: block;
+  width: 220px;
+  height: 60px;
+  border-radius: 8px;
+  line-height: 40px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #acacac;
+  border: 1px solid #acacac;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  font-size: 12px;
+}
+
+.button3 span {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  top: 7px;
+}
+
+.button3:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #acacac;
+  transition: all 0.35s;
+  border-radius: 7px;
+}
+
+.button3:hover {
+  color: #222222;
+}
+
+.button3:hover:after {
+  width: 100%;
+}
+
+.mockup-project3 {
+  margin: 445px 0px 17px 180px;
+}
+
+.mockup-img3 {
+  position: relative;
+  max-width: 80%;
+}
+
+/* Sixth part & fourth project */
+
+.sixth-container {
+  height: 140vh;
+  background-color: #222222;
+  position: relative;
+  overflow: hidden;
+}
+
+.fourth-title-project {
+  height: 280px;
+  width: 460px;
+  position: absolute;
+  top: 56px;
+  right: 100px;
+  background-color: #222222;
+}
+
+.mockup-project4 {
+  position: absolute;
+  height: 600px;
+  width: 900px;
+  background-color: #222222;
+  left: -210px;
+  bottom: -30px;
+}
+
+.wrapper-button-project4 {
+  position: absolute;
+  top: 243px;
+  right: 460px;
+  transform: translate(-50%, -50%);
+}
+
+.button4 {
+  display: block;
+  width: 220px;
+  height: 60px;
+  border-radius: 8px;
+  line-height: 40px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #acacac;
+  border: 1px solid #acacac;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  font-size: 12px;
+}
+
+.button4 span {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  top: 7px;
+}
+
+.button4:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #acacac;
+  transition: all 0.35s;
+  border-radius: 7px;
+}
+
+.button4:hover {
+  color: black;
+}
+
+.button4:hover:after {
+  width: 100%;
+}
+
+/* Seventh part */
+
+.seventh-container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(#222222, #333030);
+}
+
+.master {
+  display: flex;
+}
+
+.description-container {
+  position: relative;
+  background-color: red;
+  height: 300px;
+  width: 50%;
+  top: 72px;
+  margin: 0 auto;
+}
+
+.description-container2 {
+  position: relative;
+  background-color: blue;
+  height: 300px;
+  width: 50%;
+  top: 72px;
+  margin: 0 auto;
+}
+
+.text-description-container,
+.text-description-container2 {
+  height: 40px;
+  width: 34px;
+  margin: 0 auto;
+}
+
+.myEmail {
+  position: relative;
+  width: 419px;
+  height: 30px;
+  margin: 0 auto;
+  top: 103px;
+  text-align: center;
+  font-family: "HighCruiser";
+  font-size: 20px;
+}
+
+.myEmail a {
+  text-decoration: none;
+  color: white;
+}
+
+.title-footer {
+  position: relative;
+  width: 233px;
+  top: 230px;
+  height: 20px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Walkway";
+}
+
+.myCvImg {
+  position: relative;
+  height: 99px;
+  width: 66px;
+  margin: 0 auto;
+  top: 248px;
+}
+
+.myCvImg img {
+  width: 100%;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 900px) {
 }
