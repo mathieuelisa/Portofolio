@@ -59,7 +59,7 @@ p {
   transform: translate(-20px, -20px);
 }
 
-.cursorMail{
+.cursorMail {
   position: absolute;
   border: 2px solid #acacac;
   width: 70px;
@@ -175,7 +175,7 @@ p {
   position: fixed;
   transform: rotate(-90deg);
   margin-top: 356px;
-  margin-left: -11px;
+  margin-left: 4px;
   z-index: 99;
   color: #d6d6d6;
   font-size: 13px;
@@ -187,7 +187,7 @@ p {
   position: fixed;
   width: 7px;
   height: 224px;
-  border: 1px solid #d6d6d6;
+  border: 1px solid #6d6d6d;
   left: 0;
   border-radius: 11px;
   margin-top: 251px;
@@ -195,28 +195,29 @@ p {
   mix-blend-mode: difference;
   opacity: 0.5;
   cursor: default;
+  /* background-color: red; */
 }
 
-.myBar::after{
+.contentBar {
   content: "";
   display: block;
   position: fixed;
-  height: 222px;
+  height: 0px;
+  top: 252px;
+  left: 1px;
   width: 5px;
-  background-color: yellow;
-  /* transition: all 1s ease; */
-  /* animation: contentBar 0.7s infinite alternate; */
+  background-color: #6d6d6d;
+  animation: myWidth 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  /* animation-iteration-count: 1; */
+  /* animation-fill-mode: both; */
+  z-index: 99;
 }
 
-@keyframes contentBar {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100%{
-    transform: translateY(40px);
+@keyframes myWidth {
+  to {
+    height: 222px;
   }
 }
 

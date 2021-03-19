@@ -17,8 +17,6 @@ function handleTop(){
 document.addEventListener("scroll", handleTop)
 
 // Use button "back to the top" with scroll
-
-
 function backToTheTop(){
     rootElement.scrollTo({
         top : 0,
@@ -90,6 +88,16 @@ document.addEventListener("click", function(){
         cursor.classList.remove("expand")
     }, 500);
 })
+
+window.addEventListener("scroll",() => {
+      document.body.style.setProperty("--scroll",
+        window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+      );
+    },
+    false
+  );
+
+
 
 
 // Animation with GSAP 
