@@ -36,9 +36,11 @@ buttonScrollTop.addEventListener("mouseleave", function(){
 
 // Custom cursor params
 const cursor = document.querySelector(".cursor");
+const cursorCenter = document.querySelector(".cursorCenter")
 const btn = document.querySelectorAll("#bouton");
 const mail = document.querySelector(".myEmail")
 const toTheTop = document.querySelector(".backToTheTop")
+const socialLink = document.querySelectorAll("#social-img")
 
 
 // Movements
@@ -50,35 +52,72 @@ document.addEventListener("mousemove", function(e){
     cursor.setAttribute("style", "top: " + (y-15) + "px; left: " + (x-15) + "px")
 })
 
+
+document.addEventListener("mousemove", function(a){
+    let c = a.pageX
+    let b = a.pageY
+
+    cursorCenter.setAttribute("style", "top: " + (b-3) + "px; left: " + (c-3) +"px")
+})
+
 // Animations cursor on projects buttons
 for (let i = 0; i < btn.length; i++) {
     btn[i].addEventListener("mouseenter", function(){   
         cursor.classList.add("black")
+        cursorCenter.classList.remove("cursorCenter")
     })
 };
 
 for (let i = 0; i < btn.length; i++) {
     btn[i].addEventListener("mouseleave", function(){ 
         cursor.classList.remove("black")
+        cursorCenter.classList.add("cursorCenter")
     })
 }
 
 // Animation cursor on my email
 mail.addEventListener("mouseenter", function(){
         cursor.classList.add("cursorMail")
+        cursorCenter.classList.remove("cursorCenter")
     })
 
 mail.addEventListener("mouseleave", function(){
     cursor.classList.remove("cursorMail")
+    cursorCenter.classList.add("cursorCenter")
 })
 
 // Animation cursor on button to the top
 toTheTop.addEventListener("mouseenter", function(){
     cursor.classList.add("cursorMail")
+    cursorCenter.classList.remove("cursorCenter")
 })
 toTheTop.addEventListener("mouseleave", function(){
     cursor.classList.remove("cursorMail")
+    cursorCenter.classList.add("cursorCenter")
 })
+
+// Animation cursor on social link
+for (let i = 0; i < socialLink.length; i++) {
+    socialLink[i].addEventListener("mouseenter", function(){
+        cursor.classList.add("cursorMail")
+        cursorCenter.classList.remove("cursorCenter")
+    });
+}
+
+for (let i = 0; i < socialLink.length; i++) {
+    socialLink[i].addEventListener("mouseleave", function(){
+        cursor.classList.remove("cursorMail")
+        cursorCenter.classList.add("cursorCenter")
+    });
+}
+
+// socialLink.addEventListener("mouseenter", function(){
+//     cursor.classList.add("cursorMail")
+// })
+// socialLink.addEventListener("mouseleave", function(){
+//     cursor.classList.remove("cursorMail")
+// })
+
 
 // Animation on Click
 document.addEventListener("click", function(){
@@ -96,9 +135,6 @@ window.addEventListener("scroll",() => {
     },
     false
   );
-
-
-
 
 // Animation with GSAP 
 gsap.registerPlugin(ScrollTrigger);
@@ -121,6 +157,7 @@ const myProjects4Btn = document.querySelector(".wrapper-button-project4")
 const myProjects4Img = document.querySelector(".mockup-img4")
 
 const myMail = document.querySelector(".myEmail")
+const folio = document.querySelector(".folio")
 
 
 gsap.fromTo(mainTitle, 1,{opacity:0, x:50}, {opacity:1, x:0})
@@ -195,5 +232,9 @@ gsap.to(myProjects4Img, 1, {
     x: 130,
 })
 
-gsap.fromTo(myMail, 2, {opacity: 0, scrollTrigger : myMail,y: -60,},
+gsap.fromTo(myMail, 3, {opacity: 0, scrollTrigger : myMail,y: -60,},
     {opacity: 1,scrollTrigger : myMail, y:00})
+
+// Footer
+
+gsap.fromTo(folio,5, {scrollTrigger: folio, opacity:0}, {scrollTrigger: folio, opacity:1})

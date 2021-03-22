@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
 }
 
 /* My fonts */
@@ -18,6 +19,16 @@
 @font-face {
   font-family: "Azonix";
   src: url("/polices/Azonix.otf");
+}
+
+@font-face {
+  font-family: "Walkway Black";
+  src: url("/polices/Walkway Black.ttf");
+}
+
+@font-face {
+  font-family: "Walkway Expand SemiBold";
+  src: url("/polices/Walkway Expand SemiBold.ttf");
 }
 
 body {
@@ -49,6 +60,21 @@ p {
   top: 0;
   left: 0;
   cursor: pointer;
+  /* transform-origin: 100% 100%; */
+}
+
+.cursorCenter {
+  width: 6px;
+  height: 6px;
+  border: 1px solid #acacac;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 99;
+  pointer-events: none;
+  top: 0;
+  background-color: #acacac;
+  left: 0;
+  cursor: pointer;
 }
 
 .black {
@@ -62,10 +88,14 @@ p {
 .cursorMail {
   position: absolute;
   border: 2px solid #acacac;
-  width: 70px;
-  height: 70px;
-  transform: translate(-20px, -20px);
+  width: 90px;
+  height: 90px;
+  transform: translate(-30px, -30px);
   cursor: none;
+}
+
+.hovered {
+  color: black;
 }
 
 .expand {
@@ -175,11 +205,11 @@ p {
   position: fixed;
   transform: rotate(-90deg);
   margin-top: 356px;
-  margin-left: 4px;
   z-index: 99;
   color: #d6d6d6;
   font-size: 13px;
   mix-blend-mode: difference;
+  font-family: "Walkway Expand SemiBold";
 }
 
 .myBar {
@@ -210,8 +240,6 @@ p {
   animation: myWidth 1s linear infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
-  /* animation-iteration-count: 1; */
-  /* animation-fill-mode: both; */
   z-index: 99;
 }
 
@@ -257,7 +285,7 @@ p {
 }
 
 .title-second-container {
-  color: #dbdbdb;
+  /* color: #dbdbdb; */
   font-family: "HighCruiser";
   font-size: 5vh;
   width: 60%;
@@ -280,6 +308,11 @@ p {
 
 .arrowImg img {
   height: 100%;
+}
+
+.important-words {
+  font-size: 18px;
+  font-family: "Walkway Black";
 }
 
 /* Third Part & First project */
@@ -618,7 +651,7 @@ p {
 
 .description-container {
   position: relative;
-  background-color: red;
+  background-color: #222222;
   height: 300px;
   width: 50%;
   top: 72px;
@@ -641,12 +674,31 @@ p {
   margin: 0 auto;
 }
 
+.line {
+  border-left: 2px solid #acacac;
+  height: 165px;
+  margin: 0 auto;
+  width: 2px;
+  position: relative;
+  top: 262px;
+}
+
+.folio {
+  font-family: "HighCruiser";
+  width: 67px;
+  margin: 0 auto;
+  position: relative;
+  height: 20px;
+  top: 292px;
+  transform: rotate(-90deg);
+}
+
 .myEmail {
   position: relative;
   width: 419px;
   height: 30px;
   margin: 0 auto;
-  top: 103px;
+  top: 203px;
   text-align: center;
   font-family: "HighCruiser";
   font-size: 20px;
@@ -669,7 +721,7 @@ p {
 
 .myCvImg {
   position: relative;
-  height: 99px;
+  height: 68px;
   width: 66px;
   margin: 0 auto;
   top: 248px;
@@ -677,6 +729,20 @@ p {
 
 .myCvImg img {
   width: 100%;
+}
+
+.social-container {
+  width: 98px;
+  position: relative;
+  bottom: -343px;
+  right: -37px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#social-img {
+  height: 30px;
+  opacity: 0.4;
 }
 
 /* Responsive */
