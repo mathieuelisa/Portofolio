@@ -115,7 +115,7 @@ body {
 
 .bloc-text {
   width: 50%;
-  background-color: burlywood;
+  background-color: #222222;
   padding: 40px;
   font-family: "Walkway SemiBold";
 }
@@ -146,11 +146,6 @@ body {
   top: -23px;
 }
 
-.third-bloc {
-  height: 100px;
-  background-color: red;
-}
-
 .frameworks {
   height: 110px;
   width: 91%;
@@ -163,4 +158,29 @@ body {
 .myBtn {
   height: 40px;
   width: 140px;
+}
+
+.third-bloc {
+  display: flex;
+  justify-content: space-around;
+  height: 90vh;
+  background-color: red;
+}
+
+.image-1,
+.image-2,
+.image-3 {
+  width: 100%;
+}
+
+.image-1 {
+  background-color: blue;
+}
+
+.image-2 {
+  background-color: chocolate;
+}
+
+.image-3 {
+  background-color: cornsilk;
 }

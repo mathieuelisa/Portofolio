@@ -99,14 +99,14 @@ toTheTop.addEventListener("mouseleave", function(){
 // Animation cursor on social link
 for (let i = 0; i < socialLink.length; i++) {
     socialLink[i].addEventListener("mouseenter", function(){
-        cursor.classList.add("cursorMail")
+        cursor.classList.add("cursorLink")
         cursorCenter.classList.remove("cursorCenter")
     });
 }
 
 for (let i = 0; i < socialLink.length; i++) {
     socialLink[i].addEventListener("mouseleave", function(){
-        cursor.classList.remove("cursorMail")
+        cursor.classList.remove("cursorLink")
         cursorCenter.classList.add("cursorCenter")
     });
 }
@@ -238,3 +238,49 @@ gsap.fromTo(myMail, 3, {opacity: 0, scrollTrigger : myMail,y: -60,},
 // Footer
 
 gsap.fromTo(folio,5, {scrollTrigger: folio, opacity:0}, {scrollTrigger: folio, opacity:1})
+
+
+// ScrollBar name changement
+const nameOfMyScrollbar = document.querySelectorAll(".scroll-bar")
+
+for (let i = 0; i < nameOfMyScrollbar.length; i++) {
+    nameOfMyScrollbar[i].addEventListener("click", function(){
+        alert("coucou")
+    })
+}
+
+function changeName(){
+    let scrollBarHome = document.querySelector(".scroll-bar-home")
+    let scrollBarAbout = document.querySelector(".scroll-bar-about")
+    let scrollBarProjects = document.querySelector(".scroll-bar-projects")
+    let scrollBarContact = document.querySelector(".scroll-bar-contact")
+
+    let result = rootElement.scrollHeight - rootElement.clientHeight
+    let finalResult = rootElement.scrollTop / result + 1
+
+    if(finalResult >= 1 && finalResult <= 1.050){
+        scrollBarHome.style.display = "block"
+        scrollBarAbout.style.display = "none"
+        scrollBarProjects.style.display = "none"
+        scrollBarContact.style.display = "none"
+    }
+    else if (finalResult >= 1.051 && finalResult <= 1.150){
+        scrollBarHome.style.display = "none"
+        scrollBarAbout.style.display = "block"
+        scrollBarProjects.style.display = "none"
+        scrollBarContact.style.display = "none"
+    }
+    else if (finalResult >= 1.151 && finalResult <= 1.890){
+        scrollBarHome.style.display = "none"
+        scrollBarAbout.style.display = "none"
+        scrollBarProjects.style.display = "block"
+        scrollBarContact.style.display = "none"
+    }
+    else if(finalResult >= 1.891){
+        scrollBarHome.style.display = "none"
+        scrollBarAbout.style.display = "none"
+        scrollBarProjects.style.display = "none"
+        scrollBarContact.style.display = "block"
+    }
+}
+document.addEventListener("scroll", changeName);

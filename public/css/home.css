@@ -47,32 +47,29 @@ p {
 }
 
 /* Cursor */
+.cursorCenter {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  z-index: 99;
+  pointer-events: none;
+  background-color: #acacac;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
 
 .cursor {
+  position: absolute;
   width: 30px;
   height: 30px;
   border: 1px solid #acacac;
   border-radius: 50%;
-  position: absolute;
   z-index: 99;
   transition: 200ms ease-out;
   pointer-events: none;
   top: 0;
-  left: 0;
-  cursor: pointer;
-  /* transform-origin: 100% 100%; */
-}
-
-.cursorCenter {
-  width: 6px;
-  height: 6px;
-  border: 1px solid #acacac;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 99;
-  pointer-events: none;
-  top: 0;
-  background-color: #acacac;
   left: 0;
   cursor: pointer;
 }
@@ -94,13 +91,17 @@ p {
   cursor: none;
 }
 
-.hovered {
-  color: black;
+.cursorLink {
+  position: absolute;
+  border: 2px solid #222222;
+  width: 40px;
+  height: 40px;
+  cursor: none;
 }
 
 .expand {
   animation: pulse2 0.9s infinite ease-out;
-  border: 1px solid #acacac;
+  border: 1px solid #877e7e;
 }
 
 @keyframes pulse2 {
@@ -115,14 +116,14 @@ p {
     opacity: 0;
   }
 }
-/* Button for go back to the top */
 
+/* Button for go back to the top */
 .buttonScroll {
-  width: 87px;
-  height: 58px;
   position: fixed;
+  width: 87px;
   bottom: 28px;
   right: 71px;
+  height: 58px;
   z-index: 99;
   cursor: pointer;
   transition: all 0.5s ease;
@@ -161,7 +162,6 @@ p {
 }
 
 /* Custom scrollBar */
-
 ::-webkit-scrollbar {
   width: 10px;
   background-color: #222222;
@@ -169,17 +169,13 @@ p {
 
 ::-webkit-scrollbar-thumb {
   background-color: #777778;
-
   border-radius: 6px;
 }
-/* First Part */
 
+/* First Part */
 .container {
   height: 100vh;
-  width: 100%;
   display: flex;
-  background-color: #222222;
-  position: relative;
   background: linear-gradient(#1c1b1b, #222222);
 }
 
@@ -188,33 +184,58 @@ p {
 }
 
 .bloc-container2 {
+  position: relative;
   background-color: #1b1b1b;
   height: 600px;
-  width: 100%;
-  position: relative;
 }
 
 .bloc-container2-general {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 800px;
 }
 
-.scroll-bar {
+.scroll-bar-about,
+.scroll-bar-projects,
+.scroll-bar-contact,
+.scroll-bar-home {
   position: fixed;
   transform: rotate(-90deg);
   margin-top: 356px;
   z-index: 99;
-  color: #d6d6d6;
+  color: #acacac;
   font-size: 13px;
   mix-blend-mode: difference;
   font-family: "Walkway Expand SemiBold";
+  transition: fadeAnimation 2s linear;
+  display: none;
+}
+
+.scroll-bar-home {
+  display: block;
+}
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .myBar {
-  display: block;
   position: fixed;
+  display: block;
   width: 7px;
   height: 224px;
   border: 1px solid #6d6d6d;
@@ -225,13 +246,12 @@ p {
   mix-blend-mode: difference;
   opacity: 0.5;
   cursor: default;
-  /* background-color: red; */
 }
 
 .contentBar {
+  position: fixed;
   content: "";
   display: block;
-  position: fixed;
   height: 0px;
   top: 252px;
   left: 1px;
@@ -250,44 +270,41 @@ p {
 }
 
 .title-first-container {
+  position: absolute;
   color: #dbdbdb;
   font-size: 20px;
   font-family: "HighCruiser";
   height: 90px;
   width: 500px;
-  position: absolute;
   margin-left: 20px;
   bottom: 110px;
 }
 
 .text-first-container {
+  position: absolute;
   height: 80px;
   width: 450px;
   margin-left: 20px;
   line-height: 20px;
-  position: absolute;
   bottom: 20px;
 }
 
 /* Second Part */
-
 .second-container {
+  position: relative;
   height: 100vh;
   background-color: #222222;
-  position: relative;
 }
 
 .main-second-container {
   height: 110vh;
   padding: 60px 60px 0 60px;
-  width: 100%;
   background-color: #222222;
 }
 
 .title-second-container {
-  /* color: #dbdbdb; */
   font-family: "HighCruiser";
-  font-size: 5vh;
+  font-size: 2.5vw;
   width: 60%;
   margin-left: 50px;
 }
@@ -317,20 +334,22 @@ p {
 
 /* Third Part & First project */
 
-.third-container {
+.third-container,
+.fourth-container,
+.sixth-container,
+.fifth-container {
+  position: relative;
   height: 140vh;
   background-color: #222222;
-  position: relative;
   overflow: hidden;
 }
 
 .first-title-project {
+  position: absolute;
   height: 280px;
   width: 430px;
-  position: absolute;
   top: 56px;
   left: 78px;
-  background-color: #222222;
 }
 
 .number {
@@ -346,12 +365,11 @@ p {
   left: 45px;
   font-size: 46px;
   font-family: "HighCruiser";
-  z-index: 99;
 }
 
 .mockup-project1 {
   position: absolute;
-  height: 600px;
+  height: 607px;
   width: 933px;
   right: -90px;
   bottom: -20px;
@@ -366,7 +384,11 @@ p {
   transform: translate(-50%, -50%);
 }
 
-.button1 {
+.button1,
+.button2,
+.button3,
+.button4 {
+  position: relative;
   display: block;
   width: 220px;
   height: 60px;
@@ -377,18 +399,80 @@ p {
   color: #acacac;
   border: 1px solid #acacac;
   text-align: center;
-  position: relative;
   transition: all 0.35s;
   font-size: 12px;
 }
 
-.button1 span {
+.button1:hover,
+.button2:hover,
+.button3:hover,
+.button4:hover {
+  color: black;
+}
+
+.button1:hover:after,
+.button2:hover:after,
+.button3:hover:after,
+.button4:hover:after,
+.myCvImg img {
+  width: 100%;
+}
+
+/* Fourth part & second project */
+
+.second-title-project {
+  position: absolute;
+  height: 280px;
+  width: 460px;
+  top: 56px;
+  right: 100px;
+}
+
+.mockup-project2 {
+  position: absolute;
+  bottom: -10px;
+  width: 330px;
+  height: 600px;
+  left: -238px;
+}
+
+.wrapper-button-project2 {
+  position: absolute;
+  top: 143px;
+  right: 460px;
+  transform: translate(-50%, -50%);
+}
+
+/* Fifth part & third project */
+
+.third-title-project {
+  position: absolute;
+  height: 280px;
+  width: 430px;
+  top: 56px;
+  left: 78px;
+}
+
+.wrapper-button-project3 {
+  position: absolute;
+  top: 288px;
+  left: 660px;
+  transform: translate(-50%, -50%);
+}
+
+.button3 span,
+.button4 span,
+.button1 span,
+.button2 span {
   position: relative;
   z-index: 2;
   margin: 0 auto;
   top: 7px;
 }
 
+.button3:after,
+.button4:after,
+.button2:after,
 .button1:after {
   position: absolute;
   content: "";
@@ -401,190 +485,31 @@ p {
   border-radius: 7px;
 }
 
-.button1:hover {
-  color: black;
-}
-
-.button1:hover:after {
-  width: 100%;
-}
-
-/* Fourth part & second project */
-
-.fourth-container {
-  height: 140vh;
-  background-color: #222222;
-  position: relative;
-  overflow: hidden;
-}
-
-.second-title-project {
-  height: 280px;
-  width: 460px;
-  position: absolute;
-  top: 56px;
-  right: 100px;
-  background-color: #222222;
-}
-
-.mockup-project2 {
-  position: absolute;
-  height: 600px;
-  bottom: -30px;
-}
-
-.wrapper-button-project2 {
-  position: absolute;
-  top: 143px;
-  right: 460px;
-  transform: translate(-50%, -50%);
-}
-
-.button2 {
-  display: block;
-  width: 220px;
-  height: 60px;
-  border-radius: 8px;
-  line-height: 40px;
-  font-family: sans-serif;
-  text-decoration: none;
-  color: #acacac;
-  border: 1px solid #acacac;
-  text-align: center;
-  position: relative;
-  transition: all 0.35s;
-  font-size: 12px;
-}
-
-.button2 span {
-  position: relative;
-  z-index: 2;
-  margin: 0 auto;
-  top: 7px;
-}
-
-.button2:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #acacac;
-  transition: all 0.35s;
-  border-radius: 7px;
-}
-
-.button2:hover {
-  color: black;
-}
-
-.button2:hover:after {
-  width: 100%;
-}
-
-/* Fifth part & third project */
-
-.fifth-container {
-  height: 160vh;
-  background-color: #222222;
-  position: relative;
-  overflow: hidden;
-}
-
-.third-title-project {
-  height: 280px;
-  width: 430px;
-  position: absolute;
-  top: 56px;
-  left: 78px;
-  background-color: #222222;
-}
-
-.wrapper-button-project3 {
-  position: absolute;
-  top: 288px;
-  left: 660px;
-  transform: translate(-50%, -50%);
-}
-
-.button3 {
-  display: block;
-  width: 220px;
-  height: 60px;
-  border-radius: 8px;
-  line-height: 40px;
-  font-family: sans-serif;
-  text-decoration: none;
-  color: #acacac;
-  border: 1px solid #acacac;
-  text-align: center;
-  position: relative;
-  transition: all 0.35s;
-  font-size: 12px;
-}
-
-.button3 span {
-  position: relative;
-  z-index: 2;
-  margin: 0 auto;
-  top: 7px;
-}
-
-.button3:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #acacac;
-  transition: all 0.35s;
-  border-radius: 7px;
-}
-
-.button3:hover {
-  color: #222222;
-}
-
-.button3:hover:after {
-  width: 100%;
-}
-
 .mockup-project3 {
-  margin: 445px 0px 17px 180px;
+  position: absolute;
+  bottom: -58px;
+  left: 241px;
 }
 
 .mockup-img3 {
   position: relative;
-  max-width: 80%;
+  max-width: 93%;
 }
 
 /* Sixth part & fourth project */
 
-.sixth-container {
-  height: 140vh;
-  background-color: #222222;
-  position: relative;
-  overflow: hidden;
-}
-
 .fourth-title-project {
+  position: absolute;
   height: 280px;
   width: 460px;
-  position: absolute;
   top: 56px;
   right: 100px;
-  background-color: #222222;
 }
 
 .mockup-project4 {
   position: absolute;
-  height: 600px;
-  width: 900px;
-  background-color: #222222;
-  left: -210px;
-  bottom: -30px;
+  left: -175px;
+  bottom: 2px;
 }
 
 .wrapper-button-project4 {
@@ -592,49 +517,6 @@ p {
   top: 243px;
   right: 460px;
   transform: translate(-50%, -50%);
-}
-
-.button4 {
-  display: block;
-  width: 220px;
-  height: 60px;
-  border-radius: 8px;
-  line-height: 40px;
-  font-family: sans-serif;
-  text-decoration: none;
-  color: #acacac;
-  border: 1px solid #acacac;
-  text-align: center;
-  position: relative;
-  transition: all 0.35s;
-  font-size: 12px;
-}
-
-.button4 span {
-  position: relative;
-  z-index: 2;
-  margin: 0 auto;
-  top: 7px;
-}
-
-.button4:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #acacac;
-  transition: all 0.35s;
-  border-radius: 7px;
-}
-
-.button4:hover {
-  color: black;
-}
-
-.button4:hover:after {
-  width: 100%;
 }
 
 /* Seventh part */
@@ -649,24 +531,6 @@ p {
   display: flex;
 }
 
-.description-container {
-  position: relative;
-  background-color: #222222;
-  height: 300px;
-  width: 50%;
-  top: 72px;
-  margin: 0 auto;
-}
-
-.description-container2 {
-  position: relative;
-  background-color: blue;
-  height: 300px;
-  width: 50%;
-  top: 72px;
-  margin: 0 auto;
-}
-
 .text-description-container,
 .text-description-container2 {
   height: 40px;
@@ -675,19 +539,19 @@ p {
 }
 
 .line {
+  position: relative;
   border-left: 2px solid #acacac;
   height: 165px;
   margin: 0 auto;
   width: 2px;
-  position: relative;
   top: 262px;
 }
 
 .folio {
+  position: relative;
   font-family: "HighCruiser";
   width: 67px;
   margin: 0 auto;
-  position: relative;
   height: 20px;
   top: 292px;
   transform: rotate(-90deg);
@@ -727,13 +591,9 @@ p {
   top: 248px;
 }
 
-.myCvImg img {
-  width: 100%;
-}
-
 .social-container {
-  width: 98px;
   position: relative;
+  width: 98px;
   bottom: -343px;
   right: -37px;
   display: flex;
