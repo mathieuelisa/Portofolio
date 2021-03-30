@@ -64,7 +64,7 @@ p {
   position: absolute;
   width: 30px;
   height: 30px;
-  border: 1px solid #acacac;
+  border: 2px solid #acacac;
   border-radius: 50%;
   z-index: 99;
   transition: 200ms ease-out;
@@ -311,7 +311,7 @@ p {
 
 .text-second-container {
   height: 280px;
-  margin: 50px 300px 0 390px;
+  margin: 50px 200px 0 200px;
 }
 
 .arrowImg {
@@ -607,5 +607,182 @@ p {
 
 /* Responsive */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
+  .text-second-container {
+    margin: 50px 100px 0 100px;
+  }
+
+  .mockup-img1,
+  .mockup-img2,
+  .mockup-img4 {
+    height: 400px;
+  }
+
+  .second-title-project,
+  .fourth-title-project {
+    right: 0px;
+  }
+
+  .wrapper-button-project2,
+  .wrapper-button-project4 {
+    right: 355px;
+  }
+
+  .third-title-project {
+    left: -10px;
+  }
+
+  .wrapper-button-project3 {
+    left: 577px;
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 600px) {
+  .mySecondText,
+  .important-words,
+  .title-footer {
+    font-size: 15px;
+  }
+  .text-second-container {
+    margin: 30px 10px 0 10px;
+  }
+  .title-first-container {
+    font-size: 12px;
+    width: 0;
+  }
+
+  .text-first-container {
+    font-size: 14px;
+    width: 265px;
+    line-height: 15px;
+  }
+
+  .myBar,
+  .scroll-bar-home,
+  .scroll-bar-projects,
+  .scroll-bar-about,
+  .scroll-bar-contact,
+  .arrowImg,
+  .contentBar,
+  .backToTheTop,
+  .cursorCenter {
+    opacity: 0;
+  }
+
+  .fourth-container,
+  .sixth-container,
+  .third-container {
+    height: 60vh;
+  }
+
+  .main-second-container {
+    height: 80vh;
+  }
+
+  .fifth-container {
+    height: 70vh;
+  }
+
+  .container {
+    height: 90vh;
+  }
+
+  .number {
+    font-size: 130px;
+  }
+
+  .title-project {
+    font-size: 19px;
+    top: 62px;
+  }
+
+  #title2 {
+    top: 31px;
+  }
+
+  .cursor {
+    display: none;
+  }
+
+  .first-title-project,
+  .third-title-project,
+  .second-title-project,
+  .fourth-title-project {
+    top: 35px;
+    left: 111px;
+    width: 200px;
+    height: 129px;
+  }
+
+  .myEmail {
+    position: relative;
+    height: 30px;
+    top: 203px;
+    width: auto;
+    text-align: center;
+    font-family: "HighCruiser";
+    font-size: 12px;
+  }
+
+  .mockup-project1 {
+    height: 203px;
+    width: 286px;
+    right: 62px;
+    bottom: 68px;
+  }
+
+  .mockup-img1,
+  .mockup-img2,
+  .mockup-img4 {
+    height: 185px;
+  }
+
+  .mockup-img3 {
+    max-width: 141%;
+  }
+
+  .mockup-project2 {
+    left: -110px;
+    height: 203px;
+    width: 289px;
+    top: 196px;
+  }
+
+  .mockup-project4 {
+    left: -55px;
+    height: 203px;
+    width: 289px;
+    top: 196px;
+  }
+
+  .mockup-project3 {
+    left: 143px;
+    width: 199px;
+    top: 206px;
+    height: 300px;
+  }
+
+  .social-container {
+    width: 36px;
+    height: 84px;
+    bottom: -325px;
+    left: 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .title-second-container {
+    font-size: 3vw;
+    width: 60%;
+    margin-left: 0;
+  }
+
+  .button1,
+  .button2,
+  .button3,
+  .button4 {
+    display: none;
+  }
 }
