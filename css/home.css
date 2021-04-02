@@ -186,7 +186,7 @@ p {
 .bloc-container2 {
   position: relative;
   background-color: #1b1b1b;
-  height: 600px;
+  height: 90%;
 }
 
 .bloc-container2-general {
@@ -297,8 +297,7 @@ p {
 }
 
 .main-second-container {
-  height: 110vh;
-  padding: 60px 60px 0 60px;
+  height: 80vh;
   background-color: #222222;
 }
 
@@ -306,25 +305,24 @@ p {
   font-family: "HighCruiser";
   font-size: 2.5vw;
   width: 60%;
-  margin-left: 50px;
+  margin-left: 100px;
+}
+
+.title-second-container h1 {
+  padding-top: 73px;
 }
 
 .text-second-container {
-  height: 280px;
-  margin: 50px 200px 0 200px;
+  height: 319px;
+  width: 100%;
+  font-size: 20px;
 }
 
-.arrowImg {
+.mySecondText {
   position: relative;
-  width: 170px;
-  height: 25px;
-  margin: 0 auto;
-  top: 70px;
-  opacity: 0.5;
-}
-
-.arrowImg img {
-  height: 100%;
+  margin-top: 50px;
+  margin-left: 53px;
+  padding-right: 124px;
 }
 
 .important-words {
@@ -339,7 +337,7 @@ p {
 .sixth-container,
 .fifth-container {
   position: relative;
-  height: 140vh;
+  height: 120vh;
   background-color: #222222;
   overflow: hidden;
 }
@@ -369,10 +367,14 @@ p {
 
 .mockup-project1 {
   position: absolute;
-  height: 607px;
-  width: 933px;
-  right: -90px;
-  bottom: -20px;
+  height: 100%;
+  width: 65%;
+  right: -245px;
+  bottom: -259px;
+}
+
+.mockup-img1 {
+  width: 100%;
 }
 
 /* Buttons (Get more infos) */
@@ -430,10 +432,14 @@ p {
 
 .mockup-project2 {
   position: absolute;
-  bottom: -10px;
-  width: 330px;
-  height: 600px;
-  left: -238px;
+  bottom: -323px;
+  height: 100%;
+  width: 65%;
+  left: -119px;
+}
+
+.mockup-img2 {
+  width: 100%;
 }
 
 .wrapper-button-project2 {
@@ -487,13 +493,14 @@ p {
 
 .mockup-project3 {
   position: absolute;
-  bottom: -58px;
-  left: 241px;
+  bottom: -333px;
+  height: 100%;
+  width: 29%;
+  right: -31px;
 }
 
 .mockup-img3 {
-  position: relative;
-  max-width: 93%;
+  width: 100%;
 }
 
 /* Sixth part & fourth project */
@@ -508,8 +515,14 @@ p {
 
 .mockup-project4 {
   position: absolute;
-  left: -175px;
-  bottom: 2px;
+  left: -119px;
+  bottom: -323px;
+  height: 100%;
+  width: 65%;
+}
+
+.mockup-img4 {
+  width: 100%;
 }
 
 .wrapper-button-project4 {
@@ -541,10 +554,10 @@ p {
 .line {
   position: relative;
   border-left: 2px solid #acacac;
-  height: 165px;
+  height: 40%;
   margin: 0 auto;
   width: 2px;
-  top: 262px;
+  top: 168px;
 }
 
 .folio {
@@ -553,7 +566,7 @@ p {
   width: 67px;
   margin: 0 auto;
   height: 20px;
-  top: 292px;
+  top: 190px;
   transform: rotate(-90deg);
 }
 
@@ -562,7 +575,7 @@ p {
   width: 419px;
   height: 30px;
   margin: 0 auto;
-  top: 203px;
+  top: 135px;
   text-align: center;
   font-family: "HighCruiser";
   font-size: 20px;
@@ -576,7 +589,7 @@ p {
 .title-footer {
   position: relative;
   width: 233px;
-  top: 230px;
+  top: 143px;
   height: 20px;
   text-align: center;
   margin: 0 auto;
@@ -588,13 +601,13 @@ p {
   height: 68px;
   width: 66px;
   margin: 0 auto;
-  top: 248px;
+  top: 158px;
 }
 
 .social-container {
   position: relative;
   width: 98px;
-  bottom: -343px;
+  bottom: -217px;
   right: -37px;
   display: flex;
   justify-content: space-around;
@@ -612,11 +625,11 @@ p {
     margin: 50px 100px 0 100px;
   }
 
-  .mockup-img1,
+  /* .mockup-img1,
   .mockup-img2,
   .mockup-img4 {
     height: 400px;
-  }
+  } */
 
   .second-title-project,
   .fourth-title-project {
@@ -718,7 +731,7 @@ p {
   .myEmail {
     position: relative;
     height: 30px;
-    top: 203px;
+    top: 132px;
     width: auto;
     text-align: center;
     font-family: "HighCruiser";
@@ -726,16 +739,16 @@ p {
   }
 
   .mockup-project1 {
-    height: 203px;
-    width: 286px;
-    right: 62px;
-    bottom: 68px;
+    height: 103%;
+    width: 100%;
+    right: -70px;
+    top: 196px;
   }
 
   .mockup-img1,
   .mockup-img2,
   .mockup-img4 {
-    height: 185px;
+    width: 100%;
   }
 
   .mockup-img3 {
@@ -743,30 +756,30 @@ p {
   }
 
   .mockup-project2 {
-    left: -110px;
-    height: 203px;
-    width: 289px;
+    left: -22px;
+    height: 100%;
+    width: 100%;
     top: 196px;
   }
 
   .mockup-project4 {
-    left: -55px;
-    height: 203px;
-    width: 289px;
+    left: -122px;
+    height: 100%;
+    width: 100%;
     top: 196px;
   }
 
   .mockup-project3 {
     left: 143px;
-    width: 199px;
-    top: 206px;
-    height: 300px;
+    height: 100%;
+    width: 80%;
+    top: 196px;
   }
 
   .social-container {
     width: 36px;
     height: 84px;
-    bottom: -325px;
+    bottom: -253px;
     left: 0px;
     display: flex;
     justify-content: space-around;
@@ -777,7 +790,7 @@ p {
   .title-second-container {
     font-size: 3vw;
     width: 60%;
-    margin-left: 0;
+    margin-left: 42px;
   }
 
   .button1,
