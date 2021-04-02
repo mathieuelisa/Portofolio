@@ -285,7 +285,8 @@ body {
 @media screen and (min-width: 250px) and (max-width: 600px) {
   .cursor,
   .line,
-  .line-nav {
+  .line-nav,
+  .project {
     display: none;
   }
 
@@ -311,10 +312,6 @@ body {
     display: flex;
     height: 522px;
     width: 100%;
-  }
-
-  .project {
-    bottom: 590px;
   }
 
   .choices,
