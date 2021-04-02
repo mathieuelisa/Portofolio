@@ -645,6 +645,7 @@ p {
   }
   .text-second-container {
     margin: 30px 10px 0 10px;
+    height: 400px;
   }
   .title-first-container {
     font-size: 12px;
@@ -676,7 +677,7 @@ p {
   }
 
   .main-second-container {
-    height: 80vh;
+    height: 90vh;
   }
 
   .fifth-container {
