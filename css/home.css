@@ -320,7 +320,7 @@ p {
 
 .mySecondText {
   position: relative;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-left: 53px;
   padding-right: 124px;
 }
@@ -620,18 +620,18 @@ p {
 
 /* Responsive */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .text-second-container {
     margin: 50px 100px 0 100px;
-  }
+  } */
 
-  /* .mockup-img1,
+/* .mockup-img1,
   .mockup-img2,
   .mockup-img4 {
     height: 400px;
   } */
 
-  .second-title-project,
+/* .second-title-project,
   .fourth-title-project {
     right: 0px;
   }
@@ -648,13 +648,13 @@ p {
   .wrapper-button-project3 {
     left: 577px;
   }
-}
+} */
 
 @media screen and (min-width: 250px) and (max-width: 600px) {
   .mySecondText,
   .important-words,
   .title-footer {
-    font-size: 15px;
+    font-size: 14px;
   }
   .text-second-container {
     margin: 30px 10px 0 10px;
@@ -666,7 +666,7 @@ p {
   }
 
   .text-first-container {
-    font-size: 14px;
+    font-size: 12px;
     width: 265px;
     line-height: 15px;
   }
@@ -707,6 +707,10 @@ p {
 
   .title-project {
     font-size: 19px;
+    /* top: 62px; */
+  }
+
+  #title1 {
     top: 62px;
   }
 
@@ -714,13 +718,40 @@ p {
     top: 31px;
   }
 
+  #title3 {
+    top: 69px;
+    left: 77px;
+  }
+
+  #title4 {
+    top: 83px;
+  }
+
   .cursor {
     display: none;
   }
 
-  .first-title-project,
-  .third-title-project,
-  .second-title-project,
+  .first-title-project {
+    top: 35px;
+    left: 111px;
+    width: 200px;
+    height: 129px;
+  }
+
+  .second-title-project {
+    top: 35px;
+    left: 111px;
+    width: 200px;
+    height: 129px;
+  }
+
+  .third-title-project {
+    top: 35px;
+    left: 81px;
+    width: 200px;
+    height: 129px;
+  }
+
   .fourth-title-project {
     top: 35px;
     left: 111px;
@@ -741,7 +772,7 @@ p {
   .mockup-project1 {
     height: 103%;
     width: 100%;
-    right: -70px;
+    right: -90px;
     top: 196px;
   }
 
@@ -756,7 +787,7 @@ p {
   }
 
   .mockup-project2 {
-    left: -22px;
+    left: -33px;
     height: 100%;
     width: 100%;
     top: 196px;
@@ -778,8 +809,8 @@ p {
 
   .social-container {
     width: 36px;
-    height: 84px;
-    bottom: -253px;
+    height: 88px;
+    bottom: -231px;
     left: 0px;
     display: flex;
     justify-content: space-around;
@@ -791,6 +822,8 @@ p {
     font-size: 3vw;
     width: 60%;
     margin-left: 42px;
+    position: relative;
+    top: 66px;
   }
 
   .button1,
