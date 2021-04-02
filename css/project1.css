@@ -8,17 +8,17 @@
 /* My fonts */
 @font-face {
   font-family: "Walkway";
-  src: url("/polices/Walkway SemiBold.ttf");
+  src: url("./font/Walkway SemiBold.ttf");
 }
 
 @font-face {
   font-family: "HighCruiser";
-  src: url("/polices/HighCruiser.otf");
+  src: url("./font/HighCruiser.otf");
 }
 
 @font-face {
   font-family: "Azonix";
-  src: url("/polices/Azonix.otf");
+  src: url("./font/Azonix.otf");
 }
 
 body {
@@ -118,6 +118,59 @@ body {
   align-items: center;
   background-color: #222222;
   position: relative;
+}
+
+.choices {
+  position: fixed;
+  width: 80px;
+  height: 100px;
+  line-height: 25px;
+  top: 30px;
+  right: 63px;
+  text-align: end;
+  color: #777778;
+}
+
+.text-choice {
+  text-decoration: none;
+  color: currentColor;
+}
+
+/* Animation on menu */
+#line1,
+#line2,
+#line3,
+#line4 {
+  position: absolute;
+  border-left: 70px solid;
+  bottom: 12px;
+  height: 0.5px;
+  color: #877e7e;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(0);
+}
+
+#line1 {
+  bottom: 85px;
+  right: 45px;
+}
+
+#line2 {
+  bottom: 61px;
+  right: 70px;
+}
+
+#line3 {
+  bottom: 35px;
+  right: 70px;
+}
+
+#line4 {
+  right: 70px;
+}
+
+.text-choice:hover {
+  color: #acacac;
 }
 
 .container-pics {

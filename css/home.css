@@ -8,27 +8,27 @@
 /* My fonts */
 @font-face {
   font-family: "Walkway";
-  src: url("/polices/Walkway SemiBold.ttf");
+  src: url("./font/Walkway SemiBold.ttf");
 }
 
 @font-face {
   font-family: "HighCruiser";
-  src: url("/polices/HighCruiser.otf");
+  src: url("./font/HighCruiser.otf");
 }
 
 @font-face {
   font-family: "Azonix";
-  src: url("/polices/Azonix.otf");
+  src: url("./font/Azonix.otf");
 }
 
 @font-face {
   font-family: "Walkway Black";
-  src: url("/polices/Walkway Black.ttf");
+  src: url("./font/Walkway Black.ttf");
 }
 
 @font-face {
   font-family: "Walkway Expand SemiBold";
-  src: url("/polices/Walkway Expand SemiBold.ttf");
+  src: url("./font/Walkway Expand SemiBold.ttf");
 }
 
 body {
