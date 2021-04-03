@@ -172,29 +172,7 @@ p {
   border-radius: 6px;
 }
 
-/* First Part */
-.container {
-  height: 100vh;
-  display: flex;
-  background: linear-gradient(#1c1b1b, #222222);
-}
-
-.bloc-container1 {
-  width: 30%;
-}
-
-.bloc-container2 {
-  position: relative;
-  background-color: #1b1b1b;
-  height: 90%;
-}
-
-.bloc-container2-general {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
+/* Scroll bar on left */
 .scroll-bar-about,
 .scroll-bar-projects,
 .scroll-bar-contact,
@@ -207,30 +185,11 @@ p {
   font-size: 13px;
   mix-blend-mode: difference;
   font-family: "Walkway Expand SemiBold";
-  transition: fadeAnimation 2s linear;
   display: none;
 }
 
 .scroll-bar-home {
   display: block;
-}
-
-@keyframes fadeAnimation {
-  0% {
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 1;
-  }
-
-  90% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
 }
 
 .myBar {
@@ -240,22 +199,23 @@ p {
   height: 224px;
   border: 1px solid #6d6d6d;
   left: 0;
-  border-radius: 11px;
+  border-radius: 15px;
   margin-top: 251px;
-  z-index: 99;
   mix-blend-mode: difference;
   opacity: 0.5;
   cursor: default;
+  z-index: 99;
 }
 
 .contentBar {
   position: fixed;
-  content: "";
   display: block;
+  content: "";
+  width: 5px;
   height: 0px;
   top: 252px;
   left: 1px;
-  width: 5px;
+  border-radius: 15px;
   background-color: #6d6d6d;
   animation: myWidth 1s linear infinite;
   animation-play-state: paused;
@@ -269,116 +229,7 @@ p {
   }
 }
 
-.title-first-container {
-  position: absolute;
-  color: #dbdbdb;
-  font-size: 20px;
-  font-family: "HighCruiser";
-  height: 90px;
-  width: 500px;
-  margin-left: 20px;
-  bottom: 110px;
-}
-
-.text-first-container {
-  position: absolute;
-  height: 80px;
-  width: 450px;
-  margin-left: 20px;
-  line-height: 20px;
-  bottom: 20px;
-}
-
-/* Second Part */
-.second-container {
-  position: relative;
-  height: 100vh;
-  background-color: #222222;
-}
-
-.main-second-container {
-  height: 80vh;
-  background-color: #222222;
-}
-
-.title-second-container {
-  font-family: "HighCruiser";
-  font-size: 2.5vw;
-  width: 60%;
-  margin-left: 100px;
-}
-
-.title-second-container h1 {
-  padding-top: 73px;
-}
-
-.text-second-container {
-  height: 319px;
-  width: 90%;
-  font-size: 20px;
-}
-
-.mySecondText {
-  position: relative;
-  margin-top: 100px;
-  margin-left: 53px;
-  padding-right: 124px;
-}
-
-.important-words {
-  font-size: 18px;
-  font-family: "Walkway Black";
-}
-
-/* Third Part & First project */
-
-.third-container,
-.fourth-container,
-.sixth-container,
-.fifth-container {
-  position: relative;
-  height: 120vh;
-  background-color: #222222;
-  overflow: hidden;
-}
-
-.first-title-project {
-  position: absolute;
-  height: 280px;
-  width: 430px;
-  top: 56px;
-  left: 78px;
-}
-
-.number {
-  font-size: 300px;
-  font-family: "Azonix";
-  -webkit-text-stroke: 1px #dbdbdb;
-  color: #222222;
-}
-
-.title-project {
-  position: absolute;
-  top: 157px;
-  left: 45px;
-  font-size: 46px;
-  font-family: "HighCruiser";
-}
-
-.mockup-project1 {
-  position: absolute;
-  height: 100%;
-  width: 65%;
-  right: -245px;
-  bottom: -259px;
-}
-
-.mockup-img1 {
-  width: 100%;
-}
-
 /* Buttons (Get more infos) */
-
 .wrapper-button-project1 {
   position: absolute;
   top: 180px;
@@ -420,6 +271,126 @@ p {
   width: 100%;
 }
 
+/* First Part */
+.container {
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(#1c1b1b, #222222);
+}
+
+.bloc-container1 {
+  width: 30%;
+}
+
+.bloc-container2 {
+  position: relative;
+  background-color: #1b1b1b;
+  height: 85%;
+}
+
+.bloc-container2-general {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title-first-container {
+  position: absolute;
+  color: #dbdbdb;
+  font-size: 20px;
+  font-family: "HighCruiser";
+  /* height: 90px; */
+  margin-left: 20px;
+  bottom: 110px;
+}
+
+.text-first-container {
+  position: absolute;
+  height: 80px;
+  width: 450px;
+  line-height: 20px;
+  margin-left: 20px;
+  bottom: 20px;
+}
+
+/* Second Part */
+.main-second-container {
+  /* height: 80vh; */
+  background-color: #222222;
+}
+
+.title-second-container {
+  font-family: "HighCruiser";
+  font-size: 3vw;
+  width: 60%;
+  margin-left: 100px;
+}
+
+.title-second-container h1 {
+  padding-top: 73px;
+}
+
+.mySecondText {
+  position: relative;
+  margin: 25px 0 0 165px;
+  padding-right: 124px;
+  font-size: 0.8em;
+}
+
+.important-words {
+  font-size: 18px;
+  color: white;
+}
+
+/* Third Part & First project */
+.third-container,
+.fourth-container,
+.sixth-container,
+.fifth-container {
+  position: relative;
+  height: 120vh;
+  background-color: #222222;
+  overflow: hidden;
+}
+
+.first-title-project {
+  position: absolute;
+  height: 280px;
+  width: 430px;
+  top: 56px;
+  left: 78px;
+}
+
+.number {
+  font-size: 300px;
+  font-family: "Azonix";
+  -webkit-text-stroke: 1px #dbdbdb;
+  color: #222222;
+}
+
+.title-project {
+  position: absolute;
+  top: 157px;
+  left: 45px;
+  font-size: 46px;
+  font-family: "HighCruiser";
+}
+
+.mockup-project1 {
+  position: absolute;
+  height: 100%;
+  width: 65%;
+  right: -245px;
+  bottom: -259px;
+}
+
+.mockup-img1,
+.mockup-img2,
+.mockup-img3,
+.mockup-img4 {
+  width: 100%;
+}
+
 /* Fourth part & second project */
 
 .second-title-project {
@@ -436,10 +407,6 @@ p {
   height: 100%;
   width: 65%;
   left: -119px;
-}
-
-.mockup-img2 {
-  width: 100%;
 }
 
 .wrapper-button-project2 {
@@ -499,10 +466,6 @@ p {
   right: -31px;
 }
 
-.mockup-img3 {
-  width: 100%;
-}
-
 /* Sixth part & fourth project */
 
 .fourth-title-project {
@@ -521,10 +484,6 @@ p {
   width: 65%;
 }
 
-.mockup-img4 {
-  width: 100%;
-}
-
 .wrapper-button-project4 {
   position: absolute;
   top: 243px;
@@ -535,20 +494,9 @@ p {
 /* Seventh part */
 
 .seventh-container {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   background: linear-gradient(#222222, #333030);
-}
-
-.master {
-  display: flex;
-}
-
-.text-description-container,
-.text-description-container2 {
-  height: 40px;
-  width: 34px;
-  margin: 0 auto;
 }
 
 .line {
@@ -563,7 +511,7 @@ p {
 .folio {
   position: relative;
   font-family: "HighCruiser";
-  width: 67px;
+  width: 84px;
   margin: 0 auto;
   height: 20px;
   top: 190px;
@@ -572,11 +520,10 @@ p {
 
 .myEmail {
   position: relative;
-  width: 419px;
+  width: 423px;
   height: 30px;
   margin: 0 auto;
   top: 135px;
-  text-align: center;
   font-family: "HighCruiser";
   font-size: 20px;
 }
@@ -588,10 +535,9 @@ p {
 
 .title-footer {
   position: relative;
-  width: 233px;
+  width: 198px;
   top: 143px;
   height: 20px;
-  text-align: center;
   margin: 0 auto;
   font-family: "Walkway";
 }
@@ -618,47 +564,20 @@ p {
   opacity: 0.4;
 }
 
-/* Responsive */
-
-/* @media screen and (max-width: 800px) {
-  .text-second-container {
-    margin: 50px 100px 0 100px;
-  } */
-
-/* .mockup-img1,
-  .mockup-img2,
-  .mockup-img4 {
-    height: 400px;
-  } */
-
-/* .second-title-project,
-  .fourth-title-project {
-    right: 0px;
-  }
-
-  .wrapper-button-project2,
-  .wrapper-button-project4 {
-    right: 355px;
-  }
-
-  .third-title-project {
-    left: -10px;
-  }
-
-  .wrapper-button-project3 {
-    left: 577px;
-  }
-} */
-
-@media screen and (min-width: 250px) and (max-width: 600px) {
-  .mySecondText,
+@media screen and (min-width: 250px) and (max-width: 500px) {
   .important-words,
   .title-footer {
     font-size: 14px;
   }
+
+  .mySecondText {
+    padding-right: 40px;
+    margin: 30px 0 0 65px;
+    top: 61px;
+  }
+
   .text-second-container {
-    margin: 30px 10px 0 10px;
-    height: 400px;
+    margin: 0px 10px 0 10px;
   }
   .title-first-container {
     font-size: 12px;
@@ -679,7 +598,8 @@ p {
   .arrowImg,
   .contentBar,
   .backToTheTop,
-  .cursorCenter {
+  .cursorCenter,
+  .cursor {
     opacity: 0;
   }
 
@@ -689,16 +609,13 @@ p {
     height: 60vh;
   }
 
-  .main-second-container {
+  .main-second-container,
+  .container {
     height: 90vh;
   }
 
   .fifth-container {
     height: 70vh;
-  }
-
-  .container {
-    height: 90vh;
   }
 
   .number {
@@ -707,7 +624,6 @@ p {
 
   .title-project {
     font-size: 19px;
-    /* top: 62px; */
   }
 
   #title1 {
@@ -720,25 +636,16 @@ p {
 
   #title3 {
     top: 69px;
-    left: 77px;
+    left: 50px;
   }
 
   #title4 {
     top: 83px;
   }
 
-  .cursor {
-    display: none;
-  }
-
-  .first-title-project {
-    top: 35px;
-    left: 111px;
-    width: 200px;
-    height: 129px;
-  }
-
-  .second-title-project {
+  .first-title-project,
+  .second-title-project,
+  .fourth-title-project {
     top: 35px;
     left: 111px;
     width: 200px;
@@ -747,14 +654,7 @@ p {
 
   .third-title-project {
     top: 35px;
-    left: 81px;
-    width: 200px;
-    height: 129px;
-  }
-
-  .fourth-title-project {
-    top: 35px;
-    left: 111px;
+    left: 95px;
     width: 200px;
     height: 129px;
   }
@@ -782,10 +682,6 @@ p {
     width: 100%;
   }
 
-  .mockup-img3 {
-    max-width: 141%;
-  }
-
   .mockup-project2 {
     left: -33px;
     height: 100%;
@@ -803,13 +699,12 @@ p {
   .mockup-project3 {
     left: 143px;
     height: 100%;
-    width: 80%;
+    width: 65%;
     top: 196px;
   }
 
   .social-container {
     width: 36px;
-    height: 88px;
     bottom: -231px;
     left: 0px;
     display: flex;
@@ -819,10 +714,10 @@ p {
   }
 
   .title-second-container {
+    position: relative;
     font-size: 3vw;
     width: 60%;
     margin-left: 42px;
-    position: relative;
     top: 66px;
   }
 
@@ -831,5 +726,105 @@ p {
   .button3,
   .button4 {
     display: none;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 970px) {
+  .text-first-container,
+  .title-first-container {
+    width: 355px;
+  }
+
+  .title-first-container {
+    font-size: 15px;
+  }
+
+  .mySecondText {
+    font-size: 1em;
+  }
+
+  .button1,
+  .button2,
+  .button3,
+  .button4 {
+    display: none;
+  }
+
+  .backToTheTop,
+  .cursorCenter,
+  .cursor {
+    display: none;
+  }
+
+  .title-footer {
+    width: 229px;
+  }
+
+  .number {
+    font-size: 215px;
+  }
+
+  .title-project {
+    font-size: 25px;
+  }
+
+  #title1,
+  #title4 {
+    top: 117px;
+  }
+
+  #title2,
+  #title3 {
+    top: 57px;
+  }
+
+  .mockup-project1 {
+    width: 65%;
+    right: 80px;
+  }
+
+  .first-title-project {
+    left: 49px;
+  }
+  .second-title-project {
+    right: -60px;
+  }
+
+  .fourth-title-project {
+    right: -33px;
+  }
+
+  .mockup-project2 {
+    left: -35px;
+    top: 263px;
+  }
+
+  .mockup-project3 {
+    right: 167px;
+    top: 274px;
+  }
+
+  .mockup-project4 {
+    top: 261px;
+  }
+
+  .mockup-img1,
+  .mockup-img2,
+  .mockup-img4 {
+    width: 153%;
+  }
+
+  .mockup-img3 {
+    width: 200%;
+  }
+
+  .third-container,
+  .fourth-container,
+  .fourth-container {
+    height: 110vh;
+  }
+
+  .seventh-container {
+    height: 100vh;
   }
 }
