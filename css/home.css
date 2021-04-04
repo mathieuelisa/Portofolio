@@ -315,7 +315,6 @@ p {
 
 /* Second Part */
 .main-second-container {
-  /* height: 80vh; */
   background-color: #222222;
 }
 
@@ -735,12 +734,19 @@ p {
     width: 355px;
   }
 
+  .text-first-container {
+    bottom: 0;
+    width: 442px;
+  }
+
   .title-first-container {
     font-size: 15px;
+    bottom: 87px;
   }
 
   .mySecondText {
     font-size: 1em;
+    padding-right: 121px;
   }
 
   .button1,
@@ -824,7 +830,55 @@ p {
     height: 110vh;
   }
 
-  .seventh-container {
+  .seventh-container,
+  .main-second-container {
     height: 100vh;
+  }
+
+  .main-second-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 971px) {
+  .title-first-container {
+    width: 483px;
+    bottom: 85px;
+  }
+
+  .text-first-container {
+    bottom: 0;
+  }
+
+  .main-second-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title-second-container {
+    width: 75%;
+    font-size: 2vw;
+  }
+
+  .mySecondText {
+    font-size: 1.1em;
+    padding-right: 261px;
+    width: 75%;
+  }
+
+  .title-footer {
+    width: 228px;
+  }
+
+  .number {
+    font-size: 24vw;
+  }
+
+  .title-project {
+    font-size: 3.3vw;
   }
 }
