@@ -274,8 +274,8 @@ p {
 
 /* First Part */
 .container {
-  height: 100vh;
   display: flex;
+  height: 770px;
   background: linear-gradient(#1c1b1b, #222222);
 }
 
@@ -286,13 +286,14 @@ p {
 .bloc-container2 {
   position: relative;
   background-color: #1b1b1b;
-  height: 85%;
+  height: 90%;
 }
 
 .bloc-container2-general {
   display: flex;
   flex-direction: column;
   width: 80%;
+  height: 90%;
 }
 
 .title-first-container {
@@ -302,6 +303,7 @@ p {
   font-family: "HighCruiser";
   margin-left: 20px;
   bottom: 110px;
+  width: 59%;
 }
 
 .text-first-container {
@@ -316,19 +318,23 @@ p {
 /* Second Part */
 .main-second-container {
   background-color: #222222;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .title-second-container {
   font-family: "HighCruiser";
-  font-size: 3vw;
+  font-size: 2vw;
   width: 60%;
   margin-left: 100px;
+  margin-bottom: 30px;
 }
 
 .mySecondText {
-  font-size: 0.8em;
-  margin: 29px 103px 0 64px;
-  padding-left: 130px;
+  font-size: 1em;
+  padding-left: 219px;
   padding-right: 162px;
 }
 
@@ -343,15 +349,13 @@ p {
 .sixth-container,
 .fifth-container {
   position: relative;
-  height: 120vh;
   background-color: #222222;
   overflow: hidden;
 }
 
 .first-title-project {
-  position: absolute;
+  position: relative;
   height: 280px;
-  width: 430px;
   top: 56px;
   left: 78px;
 }
@@ -372,11 +376,9 @@ p {
 }
 
 .mockup-project1 {
-  position: absolute;
-  height: 100%;
-  width: 65%;
-  right: -245px;
-  bottom: -259px;
+  position: relative;
+  width: 62%;
+  right: -564px;
 }
 
 .mockup-img1,
@@ -389,19 +391,16 @@ p {
 /* Fourth part & second project */
 
 .second-title-project {
-  position: absolute;
+  position: relative;
   height: 280px;
-  width: 460px;
   top: 56px;
   right: 100px;
 }
 
 .mockup-project2 {
-  position: absolute;
-  bottom: -323px;
-  height: 100%;
+  position: relative;
   width: 65%;
-  left: -119px;
+  left: 269px;
 }
 
 .wrapper-button-project2 {
@@ -414,9 +413,8 @@ p {
 /* Fifth part & third project */
 
 .third-title-project {
-  position: absolute;
+  position: relative;
   height: 280px;
-  width: 430px;
   top: 56px;
   left: 78px;
 }
@@ -454,27 +452,24 @@ p {
 }
 
 .mockup-project3 {
-  position: absolute;
-  bottom: -333px;
+  position: relative;
   height: 100%;
   width: 29%;
-  right: -31px;
+  right: -154px;
 }
 
 /* Sixth part & fourth project */
 
 .fourth-title-project {
-  position: absolute;
+  position: relative;
   height: 280px;
-  width: 460px;
   top: 56px;
-  right: 100px;
+  right: -100px;
 }
 
 .mockup-project4 {
-  position: absolute;
-  left: -119px;
-  bottom: -323px;
+  position: relative;
+  left: 289px;
   height: 100%;
   width: 65%;
 }
@@ -565,6 +560,7 @@ p {
   }
 
   .mySecondText {
+    font-size: 0.8em;
     margin: 80px 105px 0 75px;
     padding-left: 0;
     padding-right: 0;
@@ -576,7 +572,8 @@ p {
     top: 61px;
   }
   .title-first-container {
-    font-size: 11px;
+    font-size: 9px;
+    width: 75%;
   }
 
   .text-first-container {
@@ -602,10 +599,6 @@ p {
   .sixth-container,
   .third-container {
     height: 60vh;
-  }
-
-  .container {
-    height: 90vh;
   }
 
   .fifth-container {
@@ -663,38 +656,38 @@ p {
     font-size: 12px;
   }
 
-  .mockup-project1 {
-    height: 103%;
-    width: 100%;
-    right: -90px;
-    top: 196px;
-  }
-
   .mockup-img1,
   .mockup-img2,
   .mockup-img4 {
     width: 100%;
   }
 
+  .mockup-project1 {
+    height: 103%;
+    width: 100%;
+    right: -90px;
+    top: 44px;
+  }
+
   .mockup-project2 {
     left: -33px;
     height: 100%;
     width: 100%;
-    top: 196px;
-  }
-
-  .mockup-project4 {
-    left: -122px;
-    height: 100%;
-    width: 100%;
-    top: 196px;
+    top: 44px;
   }
 
   .mockup-project3 {
     left: 143px;
     height: 100%;
     width: 65%;
-    top: 196px;
+    top: 44px;
+  }
+
+  .mockup-project4 {
+    left: -122px;
+    height: 100%;
+    width: 100%;
+    top: 44px;
   }
 
   .social-container {
@@ -741,6 +734,8 @@ p {
 
   .mySecondText {
     font-size: 1em;
+    padding-left: 130px;
+    padding-right: 162px;
   }
 
   .button1,
@@ -838,62 +833,5 @@ p {
   .text-second-container {
     padding-left: 86px;
     margin: 0px 137px 0 51px;
-  }
-}
-
-@media screen and (min-width: 971px) {
-  .title-first-container {
-    width: 483px;
-    bottom: 85px;
-  }
-
-  .text-first-container {
-    bottom: 0;
-  }
-
-  .main-second-container {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .title-second-container {
-    margin-top: 95px;
-    width: 75%;
-    font-size: 2vw;
-  }
-
-  .text-second-container {
-    padding-right: 261px;
-    margin: 0 165px 0 165px;
-  }
-
-  .mySecondText {
-    font-size: 1.1em;
-  }
-
-  .title-footer {
-    width: 228px;
-  }
-
-  .number {
-    font-size: 24vw;
-  }
-
-  .title-project {
-    font-size: 3.3vw;
-  }
-
-  .third-container {
-    height: 100vh;
-  }
-
-  .mockup-img3 {
-    width: 130%;
-  }
-
-  .mockup-project3 {
-    right: 72px;
   }
 }
