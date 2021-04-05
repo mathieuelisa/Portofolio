@@ -723,6 +723,10 @@ p {
   }
 
   .text-first-container {
+    font-size: 0.8em;
+  }
+
+  .text-first-container {
     bottom: 8px;
     width: 90%;
   }
@@ -733,9 +737,13 @@ p {
   }
 
   .mySecondText {
-    font-size: 1em;
+    font-size: 0.8em;
     padding-left: 130px;
     padding-right: 162px;
+  }
+
+  .important-words {
+    font-size: 1.1em;
   }
 
   .button1,
