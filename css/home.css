@@ -33,6 +33,7 @@
 
 body {
   color: #acacac;
+  background-color: #222222;
 }
 
 p {
@@ -279,7 +280,7 @@ p {
 }
 
 .bloc-container1 {
-  width: 30%;
+  width: 20%;
 }
 
 .bloc-container2 {
@@ -291,7 +292,7 @@ p {
 .bloc-container2-general {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
 }
 
 .title-first-container {
@@ -299,7 +300,6 @@ p {
   color: #dbdbdb;
   font-size: 20px;
   font-family: "HighCruiser";
-  /* height: 90px; */
   margin-left: 20px;
   bottom: 110px;
 }
@@ -325,15 +325,11 @@ p {
   margin-left: 100px;
 }
 
-.title-second-container h1 {
-  padding-top: 73px;
-}
-
 .mySecondText {
-  position: relative;
-  margin: 25px 0 0 165px;
-  padding-right: 124px;
   font-size: 0.8em;
+  margin: 29px 103px 0 64px;
+  padding-left: 130px;
+  padding-right: 162px;
 }
 
 .important-words {
@@ -494,7 +490,6 @@ p {
 
 .seventh-container {
   height: 110vh;
-  width: 100%;
   background: linear-gradient(#222222, #333030);
 }
 
@@ -570,22 +565,23 @@ p {
   }
 
   .mySecondText {
+    margin: 80px 105px 0 75px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .text-second-container {
     padding-right: 40px;
     margin: 30px 0 0 65px;
     top: 61px;
   }
-
-  .text-second-container {
-    margin: 0px 10px 0 10px;
-  }
   .title-first-container {
-    font-size: 12px;
-    width: 0;
+    font-size: 11px;
   }
 
   .text-first-container {
     font-size: 12px;
-    width: 265px;
+    width: 78%;
     line-height: 15px;
   }
 
@@ -608,7 +604,6 @@ p {
     height: 60vh;
   }
 
-  .main-second-container,
   .container {
     height: 90vh;
   }
@@ -735,8 +730,8 @@ p {
   }
 
   .text-first-container {
-    bottom: 0;
-    width: 442px;
+    bottom: 8px;
+    width: 90%;
   }
 
   .title-first-container {
@@ -746,7 +741,6 @@ p {
 
   .mySecondText {
     font-size: 1em;
-    padding-right: 121px;
   }
 
   .button1,
@@ -840,6 +834,11 @@ p {
     flex-direction: column;
     justify-content: center;
   }
+
+  .text-second-container {
+    padding-left: 86px;
+    margin: 0px 137px 0 51px;
+  }
 }
 
 @media screen and (min-width: 971px) {
@@ -853,21 +852,25 @@ p {
   }
 
   .main-second-container {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
   .title-second-container {
+    margin-top: 95px;
     width: 75%;
     font-size: 2vw;
   }
 
+  .text-second-container {
+    padding-right: 261px;
+    margin: 0 165px 0 165px;
+  }
+
   .mySecondText {
     font-size: 1.1em;
-    padding-right: 261px;
-    width: 75%;
   }
 
   .title-footer {
@@ -880,5 +883,17 @@ p {
 
   .title-project {
     font-size: 3.3vw;
+  }
+
+  .third-container {
+    height: 100vh;
+  }
+
+  .mockup-img3 {
+    width: 130%;
+  }
+
+  .mockup-project3 {
+    right: 72px;
   }
 }
