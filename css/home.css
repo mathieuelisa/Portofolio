@@ -230,6 +230,11 @@ p {
   }
 }
 
+.title-link {
+  text-decoration: none;
+  color: #acacac;
+}
+
 /* First Part */
 .container {
   display: flex;
@@ -383,7 +388,7 @@ p {
   position: relative;
   height: 280px;
   top: 56px;
-  right: -150px;
+  right: -183px;
 }
 
 .mockup-project4 {
@@ -562,7 +567,7 @@ p {
 
   .third-title-project {
     top: 35px;
-    left: 95px;
+    left: 112px;
     width: 200px;
     height: 129px;
   }
@@ -627,13 +632,6 @@ p {
     width: 60%;
     margin-left: 42px;
     top: 66px;
-  }
-
-  .button1,
-  .button2,
-  .button3,
-  .button4 {
-    display: none;
   }
 }
 
