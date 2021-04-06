@@ -40,7 +40,7 @@ const cursorCenter = document.querySelector(".cursorCenter")
 const btn = document.querySelectorAll("#bouton");
 const mail = document.querySelector(".myEmail")
 const toTheTop = document.querySelector(".backToTheTop")
-const socialLink = document.querySelectorAll("#social-img")
+const socialLink = document.querySelectorAll(".social-link")
 
 
 // Movements
@@ -59,21 +59,6 @@ document.addEventListener("mousemove", function(a){
 
     cursorCenter.setAttribute("style", "top: " + (b-3) + "px; left: " + (c-3) +"px")
 })
-
-// Animations cursor on projects buttons
-for (let i = 0; i < btn.length; i++) {
-    btn[i].addEventListener("mouseenter", function(){   
-        cursor.classList.add("black")
-        cursorCenter.classList.remove("cursorCenter")
-    })
-};
-
-for (let i = 0; i < btn.length; i++) {
-    btn[i].addEventListener("mouseleave", function(){ 
-        cursor.classList.remove("black")
-        cursorCenter.classList.add("cursorCenter")
-    })
-}
 
 // Animation cursor on my email
 mail.addEventListener("mouseenter", function(){
@@ -99,14 +84,14 @@ toTheTop.addEventListener("mouseleave", function(){
 // Animation cursor on social link
 for (let i = 0; i < socialLink.length; i++) {
     socialLink[i].addEventListener("mouseenter", function(){
-        cursor.classList.add("cursorLink")
+        cursor.classList.add("cursorMail")
         cursorCenter.classList.remove("cursorCenter")
     });
 }
 
 for (let i = 0; i < socialLink.length; i++) {
     socialLink[i].addEventListener("mouseleave", function(){
-        cursor.classList.remove("cursorLink")
+        cursor.classList.remove("cursorMail")
         cursorCenter.classList.add("cursorCenter")
     });
 }
@@ -138,19 +123,15 @@ const firstName = document.querySelector(".myName")
 const secondTitle = document.querySelector(".title-second-container")
 
 const myProjects1 = document.querySelector(".first-title-project")
-const myProjects1Btn = document.querySelector(".wrapper-button-project1")
 const myProjects1Img = document.querySelector(".mockup-img1")
 
 const myProjects2 = document.querySelector(".second-title-project")
-const myProjects2Btn = document.querySelector(".wrapper-button-project2")
 const myProjects2Img = document.querySelector(".mockup-img2")
 
 const myProjects3 = document.querySelector(".third-title-project")
-const myProjects3Btn = document.querySelector(".wrapper-button-project3")
 const myProjects3Img = document.querySelector(".mockup-img3")
 
 const myProjects4 = document.querySelector(".fourth-title-project")
-const myProjects4Btn = document.querySelector(".wrapper-button-project4")
 const myProjects4Img = document.querySelector(".mockup-img4")
 
 const myMail = document.querySelector(".myEmail")
@@ -178,11 +159,6 @@ gsap.to(myProjects1, 1, {
     x: 50,
 })
 
-gsap.to(myProjects1Btn, 1, {
-    scrollTrigger : myProjects1,
-    x: 50,
-})
-
 gsap.to(myProjects1Img, 1, {
     scrollTrigger : myProjects1Img,
     x: -90,
@@ -191,11 +167,6 @@ gsap.to(myProjects1Img, 1, {
 // Second Project
 gsap.to(myProjects2, 1, {
     scrollTrigger: myProjects2,
-    x: -50,
-})
-
-gsap.to(myProjects2Btn, 1, {
-    scrollTrigger : myProjects2,
     x: -50,
 })
 
@@ -210,13 +181,8 @@ gsap.to(myProjects3, 1, {
     x: 50,
 })
 
-gsap.to(myProjects3Btn, 1, {
-    scrollTrigger : myProjects3,
-    x: 50,
-})
-
 gsap.to(myProjects3Img, 1, {
-    scrollTrigger : myProjects3Btn,
+    scrollTrigger : myProjects3Img,
     x: -90,
 })
 
@@ -227,13 +193,8 @@ gsap.to(myProjects4, 1, {
     x: -50,
 })
 
-gsap.to(myProjects4Btn, 1, {
-    scrollTrigger : myProjects4,
-    x: -50,
-})
-
 gsap.to(myProjects4Img, 1, {
-    scrollTrigger : myProjects4Btn,
+    scrollTrigger : myProjects4Img,
     x: 130,
 })
 
