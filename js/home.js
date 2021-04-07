@@ -37,11 +37,6 @@ buttonScrollTop.addEventListener("mouseleave", function(){
 // Custom cursor params
 const cursor = document.querySelector(".cursor");
 const cursorCenter = document.querySelector(".cursorCenter")
-const btn = document.querySelectorAll("#bouton");
-const mail = document.querySelector(".myEmail")
-const toTheTop = document.querySelector(".backToTheTop")
-const socialLink = document.querySelectorAll(".social-link")
-
 
 // Movements
 document.addEventListener("mousemove", function(e){
@@ -61,6 +56,8 @@ document.addEventListener("mousemove", function(a){
 })
 
 // Animation cursor on my email
+const mail = document.querySelector(".myEmail")
+
 mail.addEventListener("mouseenter", function(){
         cursor.classList.add("cursorMail")
         cursorCenter.classList.remove("cursorCenter")
@@ -72,6 +69,8 @@ mail.addEventListener("mouseleave", function(){
 })
 
 // Animation cursor on button to the top
+const toTheTop = document.querySelector(".backToTheTop")
+
 toTheTop.addEventListener("mouseenter", function(){
     cursor.classList.add("cursorMail")
     cursorCenter.classList.remove("cursorCenter")
@@ -82,6 +81,8 @@ toTheTop.addEventListener("mouseleave", function(){
 })
 
 // Animation cursor on social link
+const socialLink = document.querySelectorAll(".social-link")
+
 for (let i = 0; i < socialLink.length; i++) {
     socialLink[i].addEventListener("mouseenter", function(){
         cursor.classList.add("cursorMail")
@@ -91,6 +92,23 @@ for (let i = 0; i < socialLink.length; i++) {
 
 for (let i = 0; i < socialLink.length; i++) {
     socialLink[i].addEventListener("mouseleave", function(){
+        cursor.classList.remove("cursorMail")
+        cursorCenter.classList.add("cursorCenter")
+    });
+}
+
+// Animation cursor on project
+const linkProject = document.querySelectorAll(".link-project")
+
+for (let i = 0; i < linkProject.length; i++) {
+    linkProject[i].addEventListener("mouseenter", function(){
+        cursor.classList.add("cursorMail")
+        cursorCenter.classList.remove("cursorCenter")
+    });
+}
+
+for (let i = 0; i < linkProject.length; i++) {
+    linkProject[i].addEventListener("mouseleave", function(){
         cursor.classList.remove("cursorMail")
         cursorCenter.classList.add("cursorCenter")
     });

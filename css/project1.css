@@ -111,7 +111,6 @@ body {
 /* First container */
 
 .container {
-  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -129,6 +128,7 @@ body {
   right: 63px;
   text-align: end;
   color: #777778;
+  z-index: 99;
 }
 
 .text-choice {
@@ -174,16 +174,14 @@ body {
 }
 
 .container-pics {
-  height: 470px;
-  width: 100%;
-  margin-top: 50px;
+  height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .container-pics img {
-  width: 70%;
+  width: 60%;
 }
 
 /* Second-container */
@@ -227,14 +225,17 @@ body {
 .project {
   position: absolute;
   transform: rotate(-90deg);
-  bottom: 17px;
+  top: 518px;
+  left: 2px;
+  font-size: 1.5em;
+  color: #777778;
 }
 
 .title-project {
   position: absolute;
-  font-size: 5vw;
+  font-size: 4em;
   width: 60%;
-  bottom: -58px;
+  top: 478px;
   margin-left: 50px;
   font-family: "Azonix";
 }
@@ -248,12 +249,10 @@ body {
 .phone-bloc {
   display: flex;
   justify-content: space-around;
-  height: auto;
   background-color: #222222;
 }
 
 .phone-section {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -267,25 +266,24 @@ body {
 }
 
 .line {
-  position: absolute;
-  border-left: 413px solid #acacac;
+  position: relative;
+  border-left: 285px solid #acacac;
   height: 2px;
-  bottom: -372px;
+  top: 106px;
   margin-left: 154px;
-  z-index: 99;
 }
 
 .number-project {
-  position: absolute;
-  bottom: -368px;
-  right: 167px;
+  position: relative;
+  right: -166px;
+  top: 76px;
 }
 
 @media screen and (min-width: 250px) and (max-width: 600px) {
   .cursor,
   .line,
   .line-nav,
-  .project {
+  .number-project {
     display: none;
   }
 
@@ -294,8 +292,8 @@ body {
   }
 
   .container {
-    height: 30vh;
-    width: 375px;
+    height: 35vh;
+    width: 350px;
   }
 
   .container-pics {
@@ -315,17 +313,17 @@ body {
 
   .choices,
   .bloc-text {
-    font-size: 13px;
+    font-size: 0.7em;
   }
 
   .bloc-text {
     height: 466px;
-    width: 100%;
+    width: 85%;
     padding: 45px;
   }
 
   .second-bloc {
-    width: 100%;
+    width: 85%;
     font-size: 13px;
   }
 
@@ -337,14 +335,14 @@ body {
 
   .main-blocs {
     flex-direction: column;
-    width: 326px;
-    background-color: #acacac;
+    width: 100%;
+    background-color: #222222;
   }
 
   .choices {
     position: fixed;
     transform: rotate(90deg);
-    right: -115px;
+    right: -133px;
     top: 139px;
     height: 27px;
     width: 307px;
@@ -355,12 +353,14 @@ body {
   }
 
   .title-project {
-    top: 215px;
+    top: 202px;
     height: 38px;
     width: 181px;
+    font-size: 1.4em;
   }
 
   .phone-section {
+    margin-top: 22px;
     height: 831px;
     top: 66px;
     width: 200px;
@@ -370,5 +370,70 @@ body {
 
   .phone-section img {
     width: 76%;
+  }
+
+  .project {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 206px;
+    left: 20px;
+    font-size: 0.8em;
+    color: #777778;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .bloc-text {
+    font-size: 1em;
+    width: 80%;
+  }
+
+  .line,
+  .number-project {
+    display: none;
+  }
+
+  .second-bloc {
+    width: 80%;
+  }
+
+  .second-container {
+    height: 550px;
+  }
+
+  .choices {
+    position: fixed;
+    transform: rotate(90deg);
+    right: -146px;
+    top: 171px;
+    height: 27px;
+    width: 427px;
+  }
+
+  .title-project {
+    font-size: 3.2em;
+  }
+
+  .text-choice {
+    margin-left: 30px;
+  }
+
+  .main-blocs {
+    flex-direction: column;
+    width: 100%;
+    background-color: #222222;
+  }
+
+  .phone-section {
+    position: relative;
+    flex-direction: column;
+    width: 200px;
+    justify-content: space-between;
+    height: 1300px;
+    margin-top: 33px;
+  }
+
+  .phone-img {
+    width: 120%;
   }
 }

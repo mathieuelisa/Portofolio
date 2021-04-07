@@ -497,13 +497,22 @@ p {
     margin: 30px 0 0 65px;
     top: 61px;
   }
+
+  .title-second-container {
+    position: relative;
+    font-size: 3vw;
+    width: 60%;
+    margin-left: 42px;
+    top: 66px;
+  }
+
   .title-first-container {
-    font-size: 9px;
+    font-size: 0.5em;
     width: 75%;
   }
 
   .text-first-container {
-    font-size: 12px;
+    font-size: 0.8em;
     width: 78%;
     line-height: 15px;
   }
@@ -549,7 +558,7 @@ p {
 
   #title3 {
     top: 69px;
-    left: 50px;
+    left: 44px;
   }
 
   #title4 {
@@ -582,16 +591,10 @@ p {
     font-size: 12px;
   }
 
-  .mockup-img1,
-  .mockup-img2,
-  .mockup-img4 {
-    width: 100%;
-  }
-
   .mockup-project1 {
     height: 103%;
     width: 100%;
-    right: -90px;
+    right: -96px;
     top: 44px;
   }
 
@@ -624,14 +627,6 @@ p {
     justify-content: space-around;
     flex-direction: row;
     margin: 0 auto;
-  }
-
-  .title-second-container {
-    position: relative;
-    font-size: 3vw;
-    width: 60%;
-    margin-left: 42px;
-    top: 66px;
   }
 }
 
@@ -751,7 +746,7 @@ p {
   }
 
   .seventh-container {
-    height: 90vh;
+    height: 222vh;
   }
 
   .main-second-container {
