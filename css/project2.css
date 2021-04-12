@@ -232,10 +232,10 @@ body {
 }
 
 .title-project {
-  position: absolute;
+  position: relative;
   font-size: 4em;
   width: 60%;
-  top: 478px;
+  top: 55px;
   margin-left: 50px;
   font-family: "Azonix";
 }
@@ -292,7 +292,7 @@ body {
   }
 
   .container {
-    height: 35vh;
+    height: 30vh;
     width: 350px;
   }
 
@@ -354,10 +354,10 @@ body {
   }
 
   .title-project {
-    top: 202px;
+    top: 15px;
     height: 38px;
     width: 181px;
-    font-size: 1.3em;
+    font-size: 1.4em;
   }
 
   .phone-section {

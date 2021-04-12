@@ -131,7 +131,8 @@ body {
   z-index: 99;
 }
 
-.text-choice {
+.text-choice,
+.myFooterButton {
   text-decoration: none;
   color: currentColor;
 }
@@ -232,10 +233,10 @@ body {
 }
 
 .title-project {
-  position: absolute;
+  position: relative;
   font-size: 4em;
   width: 60%;
-  top: 478px;
+  top: 55px;
   margin-left: 50px;
   font-family: "Azonix";
 }
@@ -257,7 +258,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 600px;
-  width: 90%;
+  width: 80%;
   background-color: #222222;
 }
 
@@ -279,11 +280,27 @@ body {
   top: 76px;
 }
 
+/* Footer container */
+
+.view-choice {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  height: 20vh;
+  margin: 0 auto;
+}
+
+#website,
+#code-src {
+  height: 25px;
+}
+
 @media screen and (min-width: 250px) and (max-width: 600px) {
   .cursor,
   .line,
   .line-nav,
-  .number-project {
+  .number-project,
+  .project {
     display: none;
   }
 
@@ -292,7 +309,7 @@ body {
   }
 
   .container {
-    height: 35vh;
+    height: 30vh;
     width: 350px;
   }
 
@@ -329,7 +346,7 @@ body {
   }
 
   .phone-bloc {
-    height: 120vh;
+    height: 900px;
     display: flex;
     justify-content: space-around;
   }
@@ -354,7 +371,7 @@ body {
   }
 
   .title-project {
-    top: 202px;
+    top: 15px;
     height: 38px;
     width: 181px;
     font-size: 1.4em;
@@ -371,15 +388,6 @@ body {
 
   .phone-section img {
     width: 76%;
-  }
-
-  .project {
-    position: absolute;
-    transform: rotate(-90deg);
-    top: 206px;
-    left: 20px;
-    font-size: 0.8em;
-    color: #777778;
   }
 }
 
