@@ -298,6 +298,7 @@ body {
 
   .container-pics {
     height: 136px;
+    margin-top: 25px;
   }
 
   .container-pics img {

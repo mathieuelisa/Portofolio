@@ -8,6 +8,8 @@ document.addEventListener("mousemove", function(e){
     let x = e.pageX;
     let y = e.pageY
 
+    console.log(e)
+
     cursor.setAttribute("style", "top: " + (y-15) + "px; left: " + (x-15) + "px")
 })
 
