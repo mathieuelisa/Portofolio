@@ -382,7 +382,7 @@ p {
 /* Seventh part */
 
 .seventh-container {
-  height: 115vh;
+  height: 750px;
   background: linear-gradient(#222222, #333030);
 }
 
@@ -475,7 +475,7 @@ p {
   }
 
   .important-words {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   .title-footer {
@@ -484,7 +484,7 @@ p {
   }
 
   .mySecondText {
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin: 50px 105px 0 75px;
     padding-left: 0;
     padding-right: 0;
@@ -505,12 +505,12 @@ p {
   }
 
   .title-first-container {
-    font-size: 0.5em;
-    width: 75%;
+    font-size: 0.7em;
+    width: 92%;
   }
 
   .text-first-container {
-    font-size: 0.8em;
+    font-size: 0.7em;
     width: 85%;
     line-height: 15px;
   }
@@ -704,10 +704,6 @@ p {
 
   .mockup-img3 {
     width: 200%;
-  }
-
-  .seventh-container {
-    height: 90vh;
   }
 
   .main-second-container {

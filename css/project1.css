@@ -182,7 +182,7 @@ body {
 }
 
 .container-pics img {
-  width: 60%;
+  width: 80%;
 }
 
 /* Second-container */
@@ -194,9 +194,17 @@ body {
 }
 
 .main-blocs {
-  background-color: red;
   display: flex;
   width: 80%;
+}
+
+.frameworks {
+  text-align: center;
+  line-height: 15px;
+}
+
+.frameworks ul {
+  list-style: none;
 }
 
 .bloc-text {
@@ -223,10 +231,15 @@ body {
   text-align: center;
 }
 
+.title-second-bloc {
+  font-size: 1.3em;
+  margin-bottom: 31px;
+}
+
 .project {
   position: absolute;
   transform: rotate(-90deg);
-  top: 518px;
+  top: 622px;
   left: 2px;
   font-size: 1.5em;
   color: #777778;
@@ -283,11 +296,17 @@ body {
 /* Footer container */
 
 .view-choice {
-  display: flex;
   width: 300px;
-  justify-content: space-around;
-  height: 20vh;
+  height: 110px;
   margin: 0 auto;
+}
+
+.myButton {
+  display: flex;
+  font-size: 0.9em;
+  height: 30px;
+  margin-top: 33px;
+  justify-content: space-around;
 }
 
 #website,
@@ -300,12 +319,9 @@ body {
   .line,
   .line-nav,
   .number-project,
-  .project {
-    display: none;
-  }
-
+  .project,
   .cursorCenter {
-    opacity: 0;
+    display: none;
   }
 
   .container {
@@ -397,8 +413,12 @@ body {
     width: 80%;
   }
 
+  .cursor,
   .line,
-  .number-project {
+  .line-nav,
+  .number-project,
+  .project,
+  .cursorCenter {
     display: none;
   }
 
@@ -444,5 +464,13 @@ body {
 
   .phone-img {
     width: 120%;
+  }
+
+  .container-pics img {
+    width: 75%;
+  }
+
+  .container-pics {
+    height: 40vh;
   }
 }
