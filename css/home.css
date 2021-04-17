@@ -239,7 +239,7 @@ p {
 /* First Part */
 .container {
   display: flex;
-  height: 770px;
+  height: 100vh;
   background: linear-gradient(#1c1b1b, #222222);
 }
 
@@ -506,7 +506,7 @@ p {
 
   .title-first-container {
     font-size: 0.7em;
-    width: 92%;
+    width: 88%;
   }
 
   .text-first-container {

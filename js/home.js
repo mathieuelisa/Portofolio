@@ -174,7 +174,7 @@ gsap.fromTo(firstName,1,{opacity:0, x:-50}, {opacity:1, x:0})
 // First project
 gsap.to(myProjects1, 1, {
     scrollTrigger : myProjects1,
-    x: 50,
+    x: 50
 })
 
 gsap.to(myProjects1Img, 1, {
