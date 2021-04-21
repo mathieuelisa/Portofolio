@@ -602,6 +602,10 @@ p {
     flex-direction: row;
     margin: 0 auto;
   }
+
+  .bloc-container2-general {
+    height: 90%;
+  }
 }
 
 @media screen and (min-width: 501px) and (max-width: 970px) {
