@@ -200,7 +200,7 @@ body {
 
 .frameworks {
   text-align: center;
-  line-height: 15px;
+  line-height: 19px;
 }
 
 .frameworks ul {
@@ -210,7 +210,7 @@ body {
 .bloc-text {
   width: 70%;
   height: 400px;
-  font-size: 17px;
+  font-size: 1em;
   background-color: #1b1b1b;
   padding: 80px;
 }
@@ -303,10 +303,12 @@ body {
 
 .myButton {
   display: flex;
-  font-size: 0.9em;
+  font-size: 0.6em;
   height: 30px;
   margin-top: 33px;
   justify-content: space-around;
+  font-family: "Azonix";
+  opacity: 0.4;
 }
 
 #website,
@@ -472,5 +474,11 @@ body {
 
   .container-pics {
     height: 40vh;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+  .bloc-text {
+    font-size: 0.9em;
   }
 }

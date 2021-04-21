@@ -57,3 +57,20 @@ link_project4.addEventListener("mouseover", function(){
 link_project4.addEventListener("mouseleave", function(){
     line_project4.style.transform = "scaleX(0)"
 })
+
+// Animation button on view link
+const socialButton = document.querySelectorAll(".myButton")
+
+for (let i = 0; i < socialButton.length; i++) {
+    socialButton[i].addEventListener("mouseenter", function(){
+        cursor.classList.add("cursorMail")
+        cursorCenter.classList.remove("cursorCenter")
+    });
+}
+
+for (let i = 0; i < socialButton.length; i++) {
+    socialButton[i].addEventListener("mouseleave", function(){
+        cursor.classList.remove("cursorMail")
+        cursorCenter.classList.add("cursorCenter")
+    });
+}

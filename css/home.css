@@ -257,7 +257,6 @@ p {
   display: flex;
   flex-direction: column;
   width: 80%;
-  height: 90%;
 }
 
 .title-first-container {
@@ -357,14 +356,14 @@ p {
 
 .mockup-project1 {
   position: relative;
-  width: 62%;
+  width: 65%;
   right: -569px;
 }
 
 .mockup-project2 {
   position: relative;
   width: 65%;
-  left: 417px;
+  left: 442px;
 }
 
 .mockup-project3 {
@@ -376,7 +375,7 @@ p {
 .mockup-project4 {
   position: relative;
   width: 65%;
-  left: 289px;
+  left: 349px;
 }
 
 /* Seventh part */
