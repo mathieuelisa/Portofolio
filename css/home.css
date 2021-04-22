@@ -38,7 +38,7 @@ body {
 }
 
 p {
-  font-family: "Walkway SemiBold";
+  font-family: "Walkway";
 }
 
 .myName {
@@ -396,7 +396,6 @@ p {
 
 .folio {
   position: relative;
-  font-family: "HighCruiser";
   width: 84px;
   margin: 0 auto;
   top: 190px;
@@ -718,5 +717,20 @@ p {
   .text-second-container {
     padding-left: 86px;
     margin: 0px 137px 0 51px;
+  }
+}
+
+@media screen and (min-width: 1800px) and (max-width: 2400px) {
+  .mySecondText,
+  .text-first-container {
+    font-size: 1.4em;
+  }
+
+  .title-second-container {
+    font-size: 2.5em;
+  }
+
+  .title-first-container {
+    font-size: 1.9em;
   }
 }

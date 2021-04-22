@@ -131,7 +131,8 @@ body {
   z-index: 99;
 }
 
-.text-choice {
+.text-choice,
+.myFooterButton {
   text-decoration: none;
   color: currentColor;
 }
@@ -181,7 +182,7 @@ body {
 }
 
 .container-pics img {
-  width: 60%;
+  width: 80%;
 }
 
 /* Second-container */
@@ -193,15 +194,23 @@ body {
 }
 
 .main-blocs {
-  background-color: red;
   display: flex;
   width: 80%;
+}
+
+.frameworks {
+  text-align: center;
+  line-height: 19px;
+}
+
+.frameworks ul {
+  list-style: none;
 }
 
 .bloc-text {
   width: 70%;
   height: 400px;
-  font-size: 17px;
+  font-size: 1em;
   background-color: #1b1b1b;
   padding: 80px;
 }
@@ -222,10 +231,15 @@ body {
   text-align: center;
 }
 
+.title-second-bloc {
+  font-size: 1.3em;
+  margin-bottom: 31px;
+}
+
 .project {
   position: absolute;
   transform: rotate(-90deg);
-  top: 518px;
+  top: 622px;
   left: 2px;
   font-size: 1.5em;
   color: #777778;
@@ -257,7 +271,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 600px;
-  width: 90%;
+  width: 80%;
   background-color: #222222;
 }
 
@@ -279,16 +293,37 @@ body {
   top: 76px;
 }
 
+/* Footer container */
+
+.view-choice {
+  width: 300px;
+  height: 110px;
+  margin: 0 auto;
+}
+
+.myButton {
+  display: flex;
+  font-size: 0.6em;
+  height: 30px;
+  margin-top: 33px;
+  justify-content: space-around;
+  font-family: "Azonix";
+  opacity: 0.4;
+}
+
+#website,
+#code-src {
+  height: 25px;
+}
+
 @media screen and (min-width: 250px) and (max-width: 600px) {
   .cursor,
   .line,
   .line-nav,
-  .number-project {
-    display: none;
-  }
-
+  .number-project,
+  .project,
   .cursorCenter {
-    opacity: 0;
+    display: none;
   }
 
   .container {
@@ -308,7 +343,7 @@ body {
 
   .second-container {
     display: flex;
-    height: 522px;
+    height: 585px;
     width: 100%;
   }
 
@@ -329,7 +364,7 @@ body {
   }
 
   .phone-bloc {
-    height: 120vh;
+    height: 900px;
     display: flex;
     justify-content: space-around;
   }
@@ -372,15 +407,6 @@ body {
   .phone-section img {
     width: 76%;
   }
-
-  .project {
-    position: absolute;
-    transform: rotate(-90deg);
-    top: 206px;
-    left: 20px;
-    font-size: 0.8em;
-    color: #777778;
-  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
@@ -389,8 +415,12 @@ body {
     width: 80%;
   }
 
+  .cursor,
   .line,
-  .number-project {
+  .line-nav,
+  .number-project,
+  .project,
+  .cursorCenter {
     display: none;
   }
 
@@ -436,5 +466,19 @@ body {
 
   .phone-img {
     width: 120%;
+  }
+
+  .container-pics img {
+    width: 75%;
+  }
+
+  .container-pics {
+    height: 40vh;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+  .bloc-text {
+    font-size: 0.9em;
   }
 }
