@@ -156,8 +156,8 @@ const myMail = document.querySelector(".myEmail")
 const folio = document.querySelector(".folio")
 
 
-gsap.fromTo(mainTitle, 1,{opacity:0, x:50}, {opacity:1, x:0})
-gsap.fromTo(mainText, 1, {opacity:0, x:50}, {opacity:1, x:0})
+gsap.fromTo(mainTitle,2,{opacity:0, x:50}, {opacity:1, x:0})
+gsap.fromTo(mainText, 2, {opacity:0, x:50}, {opacity:1, x:0})
 
 gsap.to(secondTitle,1,{
     scrollTrigger : secondTitle,
@@ -169,7 +169,7 @@ gsap.to(".mySecondText", 1, {
     y: -40,
 })
 
-gsap.fromTo(firstName,1,{opacity:0, x:-50}, {opacity:1, x:0})
+gsap.fromTo(firstName,2,{opacity:0, x:-50}, {opacity:1, x:0})
 
 // First project
 gsap.to(myProjects1, 1, {

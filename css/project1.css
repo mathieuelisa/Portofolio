@@ -61,6 +61,20 @@ body {
   transform: translate(-20px, -20px);
 }
 
+.transparent {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 99;
+  pointer-events: none;
+  background-color: #acacac;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
 .cursorMail {
   position: absolute;
   border: 2px solid #acacac;
@@ -270,7 +284,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 600px;
+  margin-top: 30px;
   width: 80%;
   background-color: #222222;
 }
