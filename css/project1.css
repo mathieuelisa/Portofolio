@@ -23,7 +23,7 @@
 
 body {
   color: #acacac;
-  font-family: "Walkway SemiBold";
+  font-family: "Walkway";
   background-color: #222222;
 }
 
@@ -222,7 +222,7 @@ body {
 }
 
 .bloc-text {
-  width: 70%;
+  width: 80%;
   height: 400px;
   font-size: 1em;
   background-color: #1b1b1b;
@@ -230,7 +230,7 @@ body {
 }
 
 .second-bloc {
-  width: 30%;
+  width: 20%;
   background-color: #1b1b1b;
   height: 400px;
   padding: 22px;
@@ -311,13 +311,13 @@ body {
 
 .view-choice {
   width: 300px;
-  height: 110px;
+  height: 40px;
   margin: 0 auto;
 }
 
 .myButton {
   display: flex;
-  font-size: 0.6em;
+  font-size: 0.7em;
   height: 30px;
   margin-top: 33px;
   justify-content: space-around;
@@ -328,6 +328,31 @@ body {
 #website,
 #code-src {
   height: 25px;
+}
+
+/* Third container */
+
+.third-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 400px;
+}
+
+.main-blocs2 {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+.bloc-text2 {
+  width: 100%;
+  height: 400px;
+  font-size: 1em;
+  /* background-color: #1b1b1b; */
+  background: linear-gradient(#222222, #1c1b1b);
+  padding: 80px;
+  padding-right: 200px;
 }
 
 @media screen and (min-width: 250px) and (max-width: 600px) {
@@ -420,6 +445,12 @@ body {
 
   .phone-section img {
     width: 76%;
+  }
+
+  .bloc-text2 {
+    padding: 50px;
+    font-size: 0.7em;
+    text-align: center;
   }
 }
 

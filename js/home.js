@@ -37,6 +37,7 @@ buttonScrollTop.addEventListener("mouseleave", function(){
 // Custom cursor params
 const cursor = document.querySelector(".cursor");
 const cursorCenter = document.querySelector(".cursorCenter")
+const textCursor = document.querySelector(".textCursor")
 
 // Movements
 document.addEventListener("mousemove", function(e){
@@ -54,6 +55,16 @@ document.addEventListener("mousemove", function(a){
 
     cursorCenter.setAttribute("style", "top: " + (b-3) + "px; left: " + (c-3) +"px")
 })
+
+document.addEventListener("mousemove", function(e){
+
+    let x = e.pageX;
+    let y = e.pageY
+
+    textCursor.setAttribute("style", "top: " + (y-75) + "px; left: " + (x-5) + "px")
+
+})
+
 
 // Animation cursor on my email
 const mail = document.querySelector(".myEmail")
@@ -104,6 +115,8 @@ for (let i = 0; i < linkProject.length; i++) {
     linkProject[i].addEventListener("mouseenter", function(){
         cursor.classList.add("cursorMail")
         cursorCenter.classList.remove("cursorCenter")
+        textCursor.setAttribute("class", "cursorExplore")
+        console.log(textCursor)
     });
 }
 
@@ -111,8 +124,10 @@ for (let i = 0; i < linkProject.length; i++) {
     linkProject[i].addEventListener("mouseleave", function(){
         cursor.classList.remove("cursorMail")
         cursorCenter.classList.add("cursorCenter")
+        textCursor.setAttribute("class", "textCursor")
     });
 }
+
 
 // Animation on Click
 document.addEventListener("click", function(){

@@ -33,7 +33,6 @@
 
 body {
   color: #acacac;
-  /* background-color: #222222; */
   background: linear-gradient(#222222, #333030);
 }
 
@@ -68,12 +67,28 @@ p {
   height: 30px;
   border: 2px solid #acacac;
   border-radius: 50%;
-  z-index: 99;
+  z-index: 98;
   transition: 200ms ease-out;
   pointer-events: none;
   top: 0;
   left: 0;
   cursor: pointer;
+}
+
+/* A voir avec Barry */
+.textCursor {
+  position: absolute;
+  font-family: "Walkway";
+  z-index: 99;
+  display: none;
+}
+
+.cursorExplore {
+  position: absolute;
+  font-family: "Walkway";
+  z-index: 99;
+  display: block;
+  mix-blend-mode: difference;
 }
 
 .black {
