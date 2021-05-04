@@ -477,7 +477,9 @@ p {
   .contentBar,
   .backToTheTop,
   .cursorCenter,
-  .cursor {
+  .cursor,
+  .textCursor,
+  .cursorExplore {
     opacity: 0;
   }
 
@@ -654,7 +656,9 @@ p {
   .cursorCenter,
   .cursor,
   .myBar,
-  .contentBar {
+  .contentBar,
+  .textCursor,
+  .cursorExplore {
     display: none;
   }
 
