@@ -61,7 +61,7 @@ link_project4.addEventListener("mouseleave", function(){
 
 
 // Animation button on view link
-const socialButton = document.querySelectorAll(".myButton")
+const socialButton = document.querySelectorAll(".myFooterButton")
 
 for (let i = 0; i < socialButton.length; i++) {
     socialButton[i].addEventListener("mouseenter", function(){

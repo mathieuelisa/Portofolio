@@ -2,7 +2,7 @@
 
 ## The project
 
-My portfolio is my last projects I realised as an autodidact before I integrated the O'clock School.
+My portfolio is my last project I realised as an autodidact before I integrated the O'clock School.
 <br><br>
 
 ## Design 🔧
