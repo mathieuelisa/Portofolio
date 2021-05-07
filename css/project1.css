@@ -155,7 +155,8 @@ body {
 #line1,
 #line2,
 #line3,
-#line4 {
+#line4,
+#line5 {
   position: absolute;
   border-left: 70px solid;
   bottom: 12px;
@@ -184,6 +185,11 @@ body {
   right: 70px;
 }
 
+#line5 {
+  bottom: -13px;
+  right: 70px;
+}
+
 .text-choice:hover {
   color: #acacac;
 }
@@ -204,7 +210,7 @@ body {
 .second-container {
   display: flex;
   width: 100%;
-  height: 400px;
+  height: 410px;
 }
 
 .main-blocs {
@@ -223,7 +229,6 @@ body {
 
 .bloc-text {
   width: 80%;
-  height: 400px;
   font-size: 1em;
   background-color: #1b1b1b;
   padding: 80px;
@@ -232,7 +237,6 @@ body {
 .second-bloc {
   width: 20%;
   background-color: #1b1b1b;
-  height: 400px;
   padding: 22px;
   display: flex;
   flex-direction: column;

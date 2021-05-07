@@ -19,17 +19,18 @@ document.addEventListener("mousemove", function(a){
 })
 
 // Transition menu
+
 const link_home = document.querySelector("#home")
 const link_project1 = document.querySelector("#project1")
+const link_project2 = document.querySelector("#project2")
 const link_project3 = document.querySelector("#project3")
 const link_project4 = document.querySelector("#project4")
-const link_project5 = document.querySelector("#project5")
 
 const line_home = document.querySelector("#line1")
-const line_project2 = document.querySelector("#line2")
-const line_project3 = document.querySelector("#line3")
-const line_project4 = document.querySelector("#line4")
-const line_project5 = document.querySelector("#line5")
+const line_project1 = document.querySelector("#line2")
+const line_project2 = document.querySelector("#line3")
+const line_project3 = document.querySelector("#line4")
+const line_project4 = document.querySelector("#line5")
 
 // Transition on "home"
 link_home.addEventListener("mouseover", function(){
@@ -38,11 +39,18 @@ link_home.addEventListener("mouseover", function(){
 link_home.addEventListener("mouseleave", function(){
     line_home.style.transform = "scaleX(0)"
 })
-// Transition on "project2"
+// Transtion on "project1"
 link_project1.addEventListener("mouseover", function(){
-    line_project2.style.transform = "scaleX(1)"
+    line_project1.style.transform = "scaleX(1)"
 })
 link_project1.addEventListener("mouseleave", function(){
+    line_project1.style.transform = "scaleX(0)"
+})
+// Transition on "project2"
+link_project2.addEventListener("mouseover", function(){
+    line_project2.style.transform = "scaleX(1)"
+})
+link_project2.addEventListener("mouseleave", function(){
     line_project2.style.transform = "scaleX(0)"
 })
 // Transition on "project3"
@@ -59,13 +67,7 @@ link_project4.addEventListener("mouseover", function(){
 link_project4.addEventListener("mouseleave", function(){
     line_project4.style.transform = "scaleX(0)"
 })
-// Transtion on "project5"
-link_project5.addEventListener("mouseover", function(){
-    line_project5.style.transform = "scaleX(1)"
-})
-link_project5.addEventListener("mouseleave", function(){
-    line_project5.style.transform = "scaleX(0)"
-})
+
 
 // Animation button on view link
 const socialButton = document.querySelectorAll(".myFooterButton")

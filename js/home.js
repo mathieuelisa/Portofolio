@@ -167,6 +167,9 @@ const myProjects3Img = document.querySelector(".mockup-img3")
 const myProjects4 = document.querySelector(".fourth-title-project")
 const myProjects4Img = document.querySelector(".mockup-img4")
 
+const myProjects5 = document.querySelector(".fifth-title-project")
+const myProjects5Img = document.querySelector(".mockup-img5")
+
 const myMail = document.querySelector(".myEmail")
 const folio = document.querySelector(".folio")
 
@@ -196,6 +199,7 @@ gsap.to(myProjects1Img, 1, {
     scrollTrigger : myProjects1Img,
     x: -90,
 })
+
 
 // Second Project
 gsap.to(myProjects2, 1, {
@@ -229,6 +233,17 @@ gsap.to(myProjects4, 1, {
 gsap.to(myProjects4Img, 1, {
     scrollTrigger : myProjects4Img,
     x: 130,
+})
+
+// Fifth project
+gsap.to(myProjects5, 1, {
+    scrollTrigger : myProjects5,
+    x: 50
+})
+
+gsap.to(myProjects5Img, 1, {
+    scrollTrigger : myProjects5Img,
+    x: -90,
 })
 
 // Footer

@@ -217,10 +217,10 @@ p {
   border: 1px solid #6d6d6d;
   left: 5px;
   border-radius: 15px;
-  margin-top: 251px;
   mix-blend-mode: difference;
   opacity: 0.5;
   cursor: default;
+  top: calc(50% - 112px);
   z-index: 99;
 }
 
@@ -260,6 +260,7 @@ p {
 
 .bloc-container1 {
   width: 20%;
+  position: relative;
 }
 
 .bloc-container2 {
@@ -325,7 +326,8 @@ p {
 .third-container,
 .fourth-container,
 .sixth-container,
-.fifth-container {
+.fifth-container,
+.eighth-container {
   position: relative;
   background-color: #222222;
   overflow: hidden;
@@ -349,7 +351,8 @@ p {
 .mockup-img1,
 .mockup-img2,
 .mockup-img3,
-.mockup-img4 {
+.mockup-img4,
+.mockup-img5 {
   width: 100%;
 }
 
@@ -362,7 +365,8 @@ p {
 }
 
 .third-title-project,
-.first-title-project {
+.first-title-project,
+.fifth-title-project {
   position: relative;
   height: 280px;
   top: 55px;
@@ -391,6 +395,12 @@ p {
   position: relative;
   width: 65%;
   left: 349px;
+}
+
+.mockup-project5 {
+  position: relative;
+  width: 65%;
+  right: -569px;
 }
 
 /* Seventh part */
@@ -483,9 +493,10 @@ p {
     opacity: 0;
   }
 
+  .third-container,
   .fourth-container,
   .sixth-container,
-  .third-container {
+  .eighth-container {
     height: 60vh;
   }
 
@@ -561,7 +572,8 @@ p {
 
   .first-title-project,
   .second-title-project,
-  .fourth-title-project {
+  .fourth-title-project,
+  .fifth-title-project {
     top: 35px;
     left: 111px;
     width: 200px;
@@ -606,6 +618,12 @@ p {
   .mockup-project4 {
     width: 100%;
     left: -122px;
+    top: 44px;
+  }
+
+  .mockup-project5 {
+    width: 100%;
+    right: -96px;
     top: 44px;
   }
 
@@ -687,19 +705,20 @@ p {
     top: 57px;
   }
 
-  .mockup-project1 {
-    width: 65%;
-    right: -98px;
-  }
-
   .first-title-project,
-  .third-title-project {
+  .third-title-project,
+  .fifth-title-project {
     left: 49px;
   }
 
   .second-title-project,
   .fourth-title-project {
     left: 148px;
+  }
+
+  .mockup-project1 {
+    width: 65%;
+    right: -98px;
   }
 
   .mockup-project2 {
@@ -717,9 +736,15 @@ p {
     left: -122px;
   }
 
+  .mockup-project5 {
+    width: 65%;
+    right: -98px;
+  }
+
   .mockup-img1,
   .mockup-img2,
-  .mockup-img4 {
+  .mockup-img4,
+  .mockup-img5 {
     width: 153%;
   }
 

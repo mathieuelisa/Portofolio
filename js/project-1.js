@@ -24,11 +24,13 @@ const link_home = document.querySelector("#home")
 const link_project2 = document.querySelector("#project2")
 const link_project3 = document.querySelector("#project3")
 const link_project4 = document.querySelector("#project4")
+const link_project5 = document.querySelector("#project5")
 
 const line_home = document.querySelector("#line1")
 const line_project2 = document.querySelector("#line2")
 const line_project3 = document.querySelector("#line3")
 const line_project4 = document.querySelector("#line4")
+const line_project5 = document.querySelector("#line5")
 
 // Transition on "home"
 link_home.addEventListener("mouseover", function(){
@@ -57,6 +59,13 @@ link_project4.addEventListener("mouseover", function(){
 })
 link_project4.addEventListener("mouseleave", function(){
     line_project4.style.transform = "scaleX(0)"
+})
+// Transtion on "project5"
+link_project5.addEventListener("mouseover", function(){
+    line_project5.style.transform = "scaleX(1)"
+})
+link_project5.addEventListener("mouseleave", function(){
+    line_project5.style.transform = "scaleX(0)"
 })
 
 

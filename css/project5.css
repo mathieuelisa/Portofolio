@@ -23,7 +23,7 @@
 
 body {
   color: #acacac;
-  font-family: "Walkway SemiBold";
+  font-family: "Walkway";
   background-color: #222222;
 }
 
@@ -155,8 +155,7 @@ body {
 #line1,
 #line2,
 #line3,
-#line4,
-#line5 {
+#line4 {
   position: absolute;
   border-left: 70px solid;
   bottom: 12px;
@@ -185,11 +184,6 @@ body {
   right: 70px;
 }
 
-#line5 {
-  bottom: -13px;
-  right: 70px;
-}
-
 .text-choice:hover {
   color: #acacac;
 }
@@ -210,13 +204,12 @@ body {
 .second-container {
   display: flex;
   width: 100%;
-  height: 850px;
+  height: 410px;
 }
 
 .main-blocs {
   display: flex;
   width: 80%;
-  height: 850px;
 }
 
 .frameworks {
@@ -229,14 +222,14 @@ body {
 }
 
 .bloc-text {
-  width: 70%;
+  width: 80%;
   font-size: 1em;
   background-color: #1b1b1b;
   padding: 80px;
 }
 
 .second-bloc {
-  width: 30%;
+  width: 20%;
   background-color: #1b1b1b;
   padding: 22px;
   display: flex;
@@ -316,13 +309,13 @@ body {
 
 .view-choice {
   width: 300px;
-  height: 110px;
+  height: 40px;
   margin: 0 auto;
 }
 
 .myButton {
   display: flex;
-  font-size: 0.6em;
+  font-size: 0.7em;
   height: 30px;
   margin-top: 33px;
   justify-content: space-around;
@@ -333,6 +326,31 @@ body {
 #website,
 #code-src {
   height: 25px;
+}
+
+/* Third container */
+
+.third-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 400px;
+}
+
+.main-blocs2 {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+.bloc-text2 {
+  width: 100%;
+  height: 400px;
+  font-size: 1em;
+  /* background-color: #1b1b1b; */
+  background: linear-gradient(#222222, #1c1b1b);
+  padding: 80px;
+  padding-right: 200px;
 }
 
 @media screen and (min-width: 250px) and (max-width: 600px) {
@@ -362,7 +380,7 @@ body {
 
   .second-container {
     display: flex;
-    height: 585px;
+    height: 522px;
     width: 100%;
   }
 
@@ -425,6 +443,12 @@ body {
 
   .phone-section img {
     width: 76%;
+  }
+
+  .bloc-text2 {
+    padding: 50px;
+    font-size: 0.7em;
+    text-align: center;
   }
 }
 
