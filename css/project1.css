@@ -235,6 +235,7 @@ body {
 }
 
 .second-bloc {
+  position: relative;
   width: 20%;
   background-color: #1b1b1b;
   padding: 22px;
@@ -298,11 +299,11 @@ body {
 }
 
 .line {
-  position: relative;
+  position: absolute;
   border-left: 285px solid #acacac;
   height: 2px;
-  top: 106px;
-  margin-left: 154px;
+  bottom: 58px;
+  margin-left: 93px;
 }
 
 .number-project {
