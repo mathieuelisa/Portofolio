@@ -526,8 +526,16 @@ body {
   }
 }
 
-@media screen and (min-width: 901px) and (max-width: 1000px) {
+/* @media screen and (min-width: 901px) and (max-width: 1000px) {
   .bloc-text {
     font-size: 0.9em;
+  }
+} */
+
+@media screen and (min-width: 1800px) {
+  .bloc-text p,
+  .frameworks,
+  .bloc-text2 {
+    font-size: 1.3em;
   }
 }

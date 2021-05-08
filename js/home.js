@@ -149,11 +149,12 @@ window.addEventListener("scroll",() => {
 // Animation with GSAP 
 gsap.registerPlugin(ScrollTrigger);
 
+const firstName = document.querySelector(".myName")
 const mainTitle = document.querySelector(".title-first-container")
 const mainText = document.querySelector(".text-first-container")
-const firstName = document.querySelector(".myName")
 
 const secondTitle = document.querySelector(".title-second-container")
+const secondText = document.querySelector(".mySecondText")
 
 const myProjects1 = document.querySelector(".first-title-project")
 const myProjects1Img = document.querySelector(".mockup-img1")
@@ -174,20 +175,17 @@ const myMail = document.querySelector(".myEmail")
 const folio = document.querySelector(".folio")
 
 
+gsap.fromTo(firstName,2,{opacity:0, x:-50}, {opacity:1, x:0})
 gsap.fromTo(mainTitle,2,{opacity:0, x:50}, {opacity:1, x:0})
 gsap.fromTo(mainText, 2, {opacity:0, x:50}, {opacity:1, x:0})
 
-gsap.to(secondTitle,1,{
-    scrollTrigger : secondTitle,
-    y:-40,
-})
 
-gsap.to(".mySecondText", 1, {
-    scrollTrigger : ".mySecondText",
-    y: -40,
-})
+gsap.to(secondTitle, 2,{scrollTrigger: secondTitle, y:-40})
 
-gsap.fromTo(firstName,2,{opacity:0, x:-50}, {opacity:1, x:0})
+
+gsap.to(secondText, 2,{scrollTrigger: secondText, y:-40})
+
+
 
 // First project
 gsap.to(myProjects1, 1, {

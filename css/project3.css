@@ -444,3 +444,11 @@ body {
     width: 120%;
   }
 }
+
+@media screen and (min-width: 1800px) {
+  .bloc-text p,
+  .frameworks,
+  .bloc-text2 {
+    font-size: 1.3em;
+  }
+}
