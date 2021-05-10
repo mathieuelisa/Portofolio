@@ -422,10 +422,9 @@ body {
   .choices {
     position: fixed;
     transform: rotate(90deg);
-    right: -133px;
-    top: 139px;
-    height: 27px;
-    width: 307px;
+    right: -111px;
+    top: 50%;
+    width: 345px;
   }
 
   .text-choice {
@@ -485,10 +484,9 @@ body {
   .choices {
     position: fixed;
     transform: rotate(90deg);
-    right: -146px;
-    top: 171px;
-    height: 27px;
-    width: 427px;
+    right: -131px;
+    top: 50%;
+    width: 492px;
   }
 
   .title-project {

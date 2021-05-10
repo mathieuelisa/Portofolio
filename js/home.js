@@ -153,6 +153,8 @@ const firstName = document.querySelector(".myName")
 const mainTitle = document.querySelector(".title-first-container")
 const mainText = document.querySelector(".text-first-container")
 
+const firstBlock = document.querySelector(".bloc-container2-general")
+
 const secondTitle = document.querySelector(".title-second-container")
 const secondText = document.querySelector(".mySecondText")
 
@@ -175,10 +177,11 @@ const myMail = document.querySelector(".myEmail")
 const folio = document.querySelector(".folio")
 
 
-gsap.fromTo(firstName,2,{opacity:0, x:-50}, {opacity:1, x:0})
-gsap.fromTo(mainTitle,2,{opacity:0, x:50}, {opacity:1, x:0})
-gsap.fromTo(mainText, 2, {opacity:0, x:50}, {opacity:1, x:0})
+gsap.fromTo(firstBlock,1, {opacity:0, x:1500}, {opacity:1,x:0})
 
+gsap.fromTo(firstName,2,{opacity:0, x:-50}, {opacity:1, x:0, delay:2})
+gsap.fromTo(mainTitle,2,{opacity:0, x:50}, {opacity:1, x:0, delay:1})
+gsap.fromTo(mainText, 2, {opacity:0, x:50}, {opacity:1, x:0, delay:1})
 
 gsap.to(secondTitle, 2,{scrollTrigger: secondTitle, y:-40})
 
