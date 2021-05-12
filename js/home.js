@@ -177,7 +177,7 @@ const myMail = document.querySelector(".myEmail")
 const folio = document.querySelector(".folio")
 
 
-gsap.fromTo(firstBlock,1, {opacity:0, x:1500}, {opacity:1,x:0})
+gsap.fromTo(firstBlock,1.3, {opacity:0, x:1500}, {opacity:1,x:0, ease:"expo.easeOut"})
 
 gsap.fromTo(firstName,2,{opacity:0, x:-50}, {opacity:1, x:0, delay:2})
 gsap.fromTo(mainTitle,2,{opacity:0, x:50}, {opacity:1, x:0, delay:1})
