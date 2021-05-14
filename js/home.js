@@ -150,7 +150,7 @@ window.addEventListener("scroll",() => {
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(CustomEase)
 
-CustomEase.create("myEase", "M0,0 C0,0 -0.021,0.871 0.216,1.018 0.572,1.238 1,1 1,1 " )
+CustomEase.create("myEase", "M0,0 C0,0 -0.003,1.093 0.302,1.048 0.704,0.988 1,1 1,1 ")
 
 const firstName = document.querySelector(".myName")
 const mainTitle = document.querySelector(".title-first-container")
@@ -182,7 +182,7 @@ const folio = document.querySelector(".folio")
 
 // gsap.fromTo(firstBlock,1.3, {opacity:0, x:1500}, {opacity:1,x:0, ease:"expo.easeOut"})
 
-gsap.fromTo(firstBlock,1.5, {opacity:0, x:1500}, {opacity:1,x:0, ease:"myEase"})
+gsap.fromTo(firstBlock,1.5, {opacity:0, x:800}, {opacity:1,x:0, ease:"myEase"})
 
 gsap.fromTo(firstName,3,{opacity:0, x:-50}, {opacity:1, x:0, delay:2})
 gsap.fromTo(mainTitle,3,{opacity:0, x:50}, {opacity:1, x:0, delay:1.5})
