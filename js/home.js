@@ -161,6 +161,8 @@ const firstBlock = document.querySelector(".bloc-container2-general")
 const secondTitle = document.querySelector(".title-second-container")
 const secondText = document.querySelector(".mySecondText")
 
+const slider = document.querySelector(".slider")
+
 const myProjects1 = document.querySelector(".first-title-project")
 const myProjects1Img = document.querySelector(".mockup-img1")
 
@@ -180,18 +182,18 @@ const myMail = document.querySelector(".myEmail")
 const folio = document.querySelector(".folio")
 
 
-// gsap.fromTo(firstBlock,1.3, {opacity:0, x:1500}, {opacity:1,x:0, ease:"expo.easeOut"})
-
 gsap.fromTo(firstBlock,1.5, {opacity:0, x:800}, {opacity:1,x:0, ease:"myEase"})
 
 gsap.fromTo(firstName,3,{opacity:0, x:-50}, {opacity:1, x:0, delay:2})
 gsap.fromTo(mainTitle,3,{opacity:0, x:50}, {opacity:1, x:0, delay:1.5})
 gsap.fromTo(mainText, 3, {opacity:0, x:50}, {opacity:1, x:0, delay:1.5})
 
-gsap.to(secondTitle, 2,{scrollTrigger: secondTitle, y:-40})
+gsap.to(secondTitle, 2,{scrollTrigger: secondTitle, y:-10})
+
+gsap.to(slider,2, {scrollTrigger:slider, height: 0})
 
 
-gsap.to(secondText, 2,{scrollTrigger: secondText, y:-40})
+gsap.to(secondText, 2,{scrollTrigger: secondText, y:-20})
 
 
 

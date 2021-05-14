@@ -307,17 +307,28 @@ p {
   width: 60%;
   margin-left: 100px;
   margin-bottom: 30px;
+  transform: translate(0px, 140px);
 }
 
 .mySecondText {
   font-size: 1em;
   padding-left: 219px;
   padding-right: 162px;
+  transform: translate(0px, 40px);
 }
 
 .important-words {
   font-size: 1.1em;
   color: white;
+}
+
+.slider {
+  position: relative;
+  background-color: #222222;
+  height: 220px;
+  transform: translateY(-30%);
+  left: 86px;
+  width: 54%;
 }
 
 /* Third Part & First project */
