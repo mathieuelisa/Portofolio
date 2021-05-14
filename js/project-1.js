@@ -18,6 +18,19 @@ document.addEventListener("mousemove", function(a){
     cursorCenter.setAttribute("style", "top: " + (b-3) + "px; left: " + (c-3) +"px")
 })
 
+// Hamburger menu
+
+const burger = document.querySelector(".hamburger")
+const myNav = document.querySelector("nav")
+const sContainer = document.querySelector(".phone-bloc")
+
+document.addEventListener("click", function(){
+    burger.classList.toggle("is-active")
+    myNav.classList.toggle("menu")
+    sContainer.classList.toggle("myPhone")
+})
+
+
 // Transition menu
 
 const link_home = document.querySelector("#home")

@@ -148,9 +148,10 @@ window.addEventListener("scroll",() => {
 
 // Animation with GSAP 
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(CustomEase)
+gsap.registerPlugin(CustomEase);
 
 CustomEase.create("myEase", "M0,0 C0,0 -0.003,1.093 0.302,1.048 0.704,0.988 1,1 1,1 ")
+
 
 const firstName = document.querySelector(".myName")
 const mainTitle = document.querySelector(".title-first-container")
@@ -189,8 +190,7 @@ gsap.fromTo(mainTitle,3,{opacity:0, x:50}, {opacity:1, x:0, delay:1.5})
 gsap.fromTo(mainText, 3, {opacity:0, x:50}, {opacity:1, x:0, delay:1.5})
 
 gsap.to(secondTitle, 2,{scrollTrigger: secondTitle, y:-10})
-
-gsap.to(slider,2, {scrollTrigger:slider, height: 0})
+gsap.to(slider,2, {scrollTrigger:secondTitle, height: 0})
 
 
 gsap.to(secondText, 2,{scrollTrigger: secondText, y:-20})

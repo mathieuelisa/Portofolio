@@ -325,7 +325,7 @@ p {
 .slider {
   position: relative;
   background-color: #222222;
-  height: 220px;
+  height: 300px;
   transform: translateY(-30%);
   left: 86px;
   width: 54%;
@@ -767,5 +767,9 @@ p {
 
   .bloc-container2-general {
     height: 90%;
+  }
+
+  .slider {
+    display: none;
   }
 }
