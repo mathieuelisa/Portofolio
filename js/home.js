@@ -1,3 +1,6 @@
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(CustomEase);
+
 let buttonScrollTop = document.querySelector(".buttonScroll")
 let buttonScrollTop2 = document.querySelector(".topButtonScroll")
 let rootElement = document.documentElement
@@ -147,12 +150,6 @@ window.addEventListener("scroll",() => {
   );
 
 // Animation with GSAP 
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(CustomEase);
-
-CustomEase.create("myEase", "M0,0 C0,0 -0.003,1.093 0.302,1.048 0.704,0.988 1,1 1,1 ")
-
-
 const firstName = document.querySelector(".myName")
 const mainTitle = document.querySelector(".title-first-container")
 const mainText = document.querySelector(".text-first-container")
@@ -182,7 +179,7 @@ const myProjects5Img = document.querySelector(".mockup-img5")
 const myMail = document.querySelector(".myEmail")
 const folio = document.querySelector(".folio")
 
-
+CustomEase.create("myEase", "M0,0 C0,0 -0.003,1.093 0.302,1.048 0.704,0.988 1,1 1,1 ")
 gsap.fromTo(firstBlock,1.5, {opacity:0, x:800}, {opacity:1,x:0, ease:"myEase"})
 
 gsap.fromTo(firstName,3,{opacity:0, x:-50}, {opacity:1, x:0, delay:2})
@@ -192,74 +189,62 @@ gsap.fromTo(mainText, 3, {opacity:0, x:50}, {opacity:1, x:0, delay:1.5})
 gsap.to(secondTitle, 2,{scrollTrigger: secondTitle, y:-10})
 gsap.to(slider,2, {scrollTrigger:secondTitle, height: 0})
 
-
 gsap.to(secondText, 2,{scrollTrigger: secondText, y:-20})
 
 
-
-// First project
 gsap.to(myProjects1, 1, {
     scrollTrigger : myProjects1,
     x: 50
 })
-
 gsap.to(myProjects1Img, 1, {
     scrollTrigger : myProjects1Img,
     x: -90,
 })
 
 
-// Second Project
 gsap.to(myProjects2, 1, {
     scrollTrigger: myProjects2,
     x: -50,
 })
-
 gsap.to(myProjects2Img, 1, {
     scrollTrigger : myProjects2Img,
     x: 40,
 })
 
-// Third Project
+
 gsap.to(myProjects3, 1, {
     scrollTrigger : myProjects3,
     x: 50,
 })
-
 gsap.to(myProjects3Img, 1, {
     scrollTrigger : myProjects3Img,
     x: -90,
 })
 
-// Fourth Project
 
 gsap.to(myProjects4, 1, {
     scrollTrigger : myProjects4,
     x: -50,
 })
-
 gsap.to(myProjects4Img, 1, {
     scrollTrigger : myProjects4Img,
     x: 130,
 })
 
-// Fifth project
+
 gsap.to(myProjects5, 1, {
     scrollTrigger : myProjects5,
     x: 50
 })
-
 gsap.to(myProjects5Img, 1, {
     scrollTrigger : myProjects5Img,
     x: -90,
 })
 
-// Footer
+
 gsap.fromTo(myMail, 3, {opacity: 0, scrollTrigger : myMail,y: -60,},
     {opacity: 1,scrollTrigger : myMail, y:00})
-
 gsap.fromTo(folio,5, {scrollTrigger: folio, opacity:0}, {scrollTrigger: folio, opacity:1})
-
 
 // ScrollBar name changement
 function changeName(){

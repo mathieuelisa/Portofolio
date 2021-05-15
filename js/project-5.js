@@ -18,7 +18,16 @@ document.addEventListener("mousemove", function(a){
     cursorCenter.setAttribute("style", "top: " + (b-3) + "px; left: " + (c-3) +"px")
 })
 
-// Transition menu
+// Hamburger menu
+const burger = document.querySelector(".hamburger")
+const myBody = document.querySelector("body")
+const myNav = document.querySelector("nav")
+
+burger.addEventListener("click", function(){
+    burger.classList.toggle("is-active")
+    myNav.classList.toggle("nav--open")
+    myBody.classList.toggle("menu--open")
+})
 
 const link_home = document.querySelector("#home")
 const link_project1 = document.querySelector("#project1")

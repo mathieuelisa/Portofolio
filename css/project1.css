@@ -166,6 +166,16 @@ body {
   transform: scaleX(0);
 }
 
+.then {
+  position: absolute;
+  border-left: 70px solid;
+  bottom: 12px;
+  height: 0.5px;
+  color: #877e7e;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(0);
+}
+
 #line1 {
   bottom: 85px;
   right: 45px;
@@ -265,6 +275,7 @@ body {
 }
 
 .title-project {
+  z-index: 19;
   position: relative;
   font-size: 4em;
   width: 60%;
@@ -373,12 +384,13 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .menu--open {
   height: 100vh;
   overflow: hidden;
-  background-color: yellow;
+  background-color: #acacac;
 }
 
 .hamburger {
@@ -427,8 +439,8 @@ nav {
 .hamburger-inner::before,
 .hamburger-inner::after {
   width: 40px;
-  height: 4px;
-  background-color: #000;
+  height: 3px;
+  background-color: #acacac;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -473,7 +485,7 @@ nav {
   background-color: transparent !important;
 }
 .hamburger--emphatic.is-active .hamburger-inner::before {
-  background-color: red;
+  background-color: #222222;
   left: -80px;
   top: -80px;
   transform: translate3d(80px, 80px, 0) rotate(45deg);
@@ -481,7 +493,7 @@ nav {
     transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .hamburger--emphatic.is-active .hamburger-inner::after {
-  background-color: red;
+  background-color: #222222;
   right: -80px;
   top: -80px;
   transform: translate3d(-80px, 80px, 0) rotate(-45deg);

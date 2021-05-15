@@ -2,24 +2,19 @@
 const cursor = document.querySelector(".cursor")
 const cursorCenter = document.querySelector(".cursorCenter")
 
-// Movements
 document.addEventListener("mousemove", function(e){
-
     let x = e.pageX;
     let y = e.pageY
-
     cursor.setAttribute("style", "top: " + (y-15) + "px; left: " + (x-15) + "px")
 })
 
 document.addEventListener("mousemove", function(a){
-    let c = a.pageX
+    let c = a.pageX;
     let b = a.pageY
-
     cursorCenter.setAttribute("style", "top: " + (b-3) + "px; left: " + (c-3) +"px")
 })
 
 // Hamburger menu 
-
 const burger = document.querySelector(".hamburger")
 const myBody = document.querySelector("body")
 const myNav = document.querySelector("nav")
@@ -30,9 +25,7 @@ burger.addEventListener("click", function(){
     myBody.classList.toggle("menu--open")
 })
 
-
 // Transition menu
-
 const link_home = document.querySelector("#home")
 const link_project2 = document.querySelector("#project2")
 const link_project3 = document.querySelector("#project3")

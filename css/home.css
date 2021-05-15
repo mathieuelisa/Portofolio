@@ -203,10 +203,6 @@ p {
   display: none;
 }
 
-.scroll-bar-home {
-  display: block;
-}
-
 .myBar {
   position: fixed;
   display: block;
