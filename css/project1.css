@@ -360,7 +360,26 @@ body {
   padding-right: 200px;
 }
 
-/* Button Hamburger */
+/* Hamburger menu + Custom button */
+
+nav {
+  display: none;
+}
+
+.nav--open {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu--open {
+  height: 100vh;
+  overflow: hidden;
+  background-color: yellow;
+}
 
 .hamburger {
   padding: 15px 15px;
@@ -377,23 +396,6 @@ body {
   margin: 0;
   overflow: visible;
   z-index: 99;
-}
-
-nav {
-  z-index: 50;
-  position: fixed;
-  transition: all 2s ease;
-  width: 50%;
-}
-
-.is-active {
-}
-
-.menu {
-  z-index: 50;
-  position: fixed;
-  height: 50vh;
-  background-color: yellow;
 }
 
 .hamburger:hover {
