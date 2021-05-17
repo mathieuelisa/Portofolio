@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 // Custom cursor
 const cursor = document.querySelector(".cursor")
 const cursorCenter = document.querySelector(".cursorCenter")
@@ -92,10 +94,3 @@ for (let i = 0; i < socialButton.length; i++) {
     });
 }
 
-// Menu hamburger
-
-const menuHamburger = document.querySelector(".nav--open")
-
-// document.addEventListener("click", function(){
-//     alert("fuck")
-// })
