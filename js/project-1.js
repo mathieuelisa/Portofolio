@@ -91,3 +91,11 @@ for (let i = 0; i < socialButton.length; i++) {
         cursorCenter.classList.add("cursorCenter")
     });
 }
+
+// Menu hamburger
+
+const menuHamburger = document.querySelector(".nav--open")
+
+// document.addEventListener("click", function(){
+//     alert("fuck")
+// })

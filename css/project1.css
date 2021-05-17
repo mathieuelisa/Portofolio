@@ -112,11 +112,13 @@ nav {
 .nav__links {
   display: inline-block;
   font-size: 1.2em;
-  width: 151px;
+  width: 190px;
   text-decoration: none;
   padding: 10px;
-  font-family: "Azonix";
+  /* font-family: "Azonix"; */
+  font-family: "HighCruiser";
   color: #1b1b1b;
+  text-transform: uppercase;
 }
 
 .menu--open {
