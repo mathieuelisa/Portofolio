@@ -86,9 +86,7 @@ for (let i = 0; i < socialButton.length; i++) {
         cursor.classList.add("transparent")
         cursorCenter.classList.remove("cursorCenter")
     });
-}
 
-for (let i = 0; i < socialButton.length; i++) {
     socialButton[i].addEventListener("mouseleave", function(){
         cursor.classList.remove("transparent")
         cursorCenter.classList.add("cursorCenter")

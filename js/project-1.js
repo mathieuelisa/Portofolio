@@ -42,7 +42,7 @@ const line_project5 = document.querySelector("#line5")
 
 // Transition on "home"
 link_home.addEventListener("mouseover", function(){
-    line_home.style.transform = "scaleX(1)"
+   line_home.style.transform = "scaleX(1)" 
 })
 link_home.addEventListener("mouseleave", function(){
     line_home.style.transform = "scaleX(0)"
@@ -85,12 +85,11 @@ for (let i = 0; i < socialButton.length; i++) {
         cursor.classList.add("transparent")
         cursorCenter.classList.remove("cursorCenter")
     });
-}
 
-for (let i = 0; i < socialButton.length; i++) {
     socialButton[i].addEventListener("mouseleave", function(){
         cursor.classList.remove("transparent")
         cursorCenter.classList.add("cursorCenter")
     });
+
 }
 
