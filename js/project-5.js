@@ -2,7 +2,6 @@
 const cursor = document.querySelector(".cursor")
 const cursorCenter = document.querySelector(".cursorCenter")
 
-// Movements
 document.addEventListener("mousemove", function(e){
 
     let x = e.pageX;
@@ -29,54 +28,21 @@ burger.addEventListener("click", function(){
     myBody.classList.toggle("menu--open")
 })
 
-const link_home = document.querySelector("#home")
-const link_project1 = document.querySelector("#project1")
-const link_project2 = document.querySelector("#project2")
-const link_project3 = document.querySelector("#project3")
-const link_project4 = document.querySelector("#project4")
+// Transition menu
+let elems = ["home", "project1", "project2", "project3", "project4"]
+let links = ["line1", "line2", "line3", "line4", "line5"]
 
-const line_home = document.querySelector("#line1")
-const line_project1 = document.querySelector("#line2")
-const line_project2 = document.querySelector("#line3")
-const line_project3 = document.querySelector("#line4")
-const line_project4 = document.querySelector("#line5")
+for (let i = 0; i < elems.length; i++) {
+   let link = document.getElementById(elems[i]);
+   let line = document.getElementById(links[i]);
 
-// Transition on "home"
-link_home.addEventListener("mouseover", function(){
-    line_home.style.transform = "scaleX(1)"
-})
-link_home.addEventListener("mouseleave", function(){
-    line_home.style.transform = "scaleX(0)"
-})
-// Transtion on "project1"
-link_project1.addEventListener("mouseover", function(){
-    line_project1.style.transform = "scaleX(1)"
-})
-link_project1.addEventListener("mouseleave", function(){
-    line_project1.style.transform = "scaleX(0)"
-})
-// Transition on "project2"
-link_project2.addEventListener("mouseover", function(){
-    line_project2.style.transform = "scaleX(1)"
-})
-link_project2.addEventListener("mouseleave", function(){
-    line_project2.style.transform = "scaleX(0)"
-})
-// Transition on "project3"
-link_project3.addEventListener("mouseover", function(){
-    line_project3.style.transform = "scaleX(1)"
-})
-link_project3.addEventListener("mouseleave", function(){
-    line_project3.style.transform = "scaleX(0)"
-})
-// Transtion on "project4"
-link_project4.addEventListener("mouseover", function(){
-    line_project4.style.transform = "scaleX(1)"
-})
-link_project4.addEventListener("mouseleave", function(){
-    line_project4.style.transform = "scaleX(0)"
-})
-
+   link.addEventListener("mouseover", function(){
+       line.style.transform = "scaleX(1)";
+   })
+   link.addEventListener("mouseleave", function(){
+       line.style.transform = "scaleX(0)";
+   })
+}
 
 // Animation button on view link
 const socialButton = document.querySelectorAll(".myFooterButton")
