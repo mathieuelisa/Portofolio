@@ -329,6 +329,7 @@ nav {
   max-width: 65%;
   top: 25px;
   border-radius: 5px;
+  border: 1px solid rgb(172, 172, 172, 0.1);
 }
 
 /* Second-container */
@@ -433,7 +434,7 @@ nav {
   position: absolute;
   border-left: 285px solid #acacac;
   height: 2px;
-  bottom: 58px;
+  bottom: 63px;
   margin-left: 93px;
 }
 
@@ -508,12 +509,11 @@ nav {
 
   .container-pics {
     height: 136px;
-    margin-top: 25px;
   }
 
   .container-pics img {
     left: 0;
-    width: 277px;
+    width: 360px;
   }
 
   .second-container {

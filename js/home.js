@@ -118,8 +118,7 @@ for (let i = 0; i < linkProject.length; i++) {
     linkProject[i].addEventListener("mouseenter", function(){
         cursor.classList.add("cursorMail")
         cursorCenter.classList.remove("cursorCenter")
-        textCursor.setAttribute("class", "cursorExplore")
-        console.log(textCursor)
+        textCursor.className = "cursorExplore"
     });
 }
 
@@ -127,10 +126,9 @@ for (let i = 0; i < linkProject.length; i++) {
     linkProject[i].addEventListener("mouseleave", function(){
         cursor.classList.remove("cursorMail")
         cursorCenter.classList.add("cursorCenter")
-        textCursor.setAttribute("class", "textCursor")
+        textCursor.className ="textCursor"
     });
 }
-
 
 // Animation on Click
 document.addEventListener("click", function(){

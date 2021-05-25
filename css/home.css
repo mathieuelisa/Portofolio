@@ -87,6 +87,16 @@ p {
   z-index: 99;
   display: block;
   mix-blend-mode: difference;
+  animation: fadeOut 2s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .black {
@@ -353,12 +363,27 @@ p {
   font-family: "HighCruiser";
 }
 
-.mockup-img1,
 .mockup-img2,
 .mockup-img3,
 .mockup-img4,
 .mockup-img5 {
-  width: 100%;
+  max-width: 80%;
+}
+
+.mockup-img1 {
+  position: relative;
+  max-width: 80%;
+  right: -80px;
+  border-radius: 5px;
+}
+
+.mockup-img2 {
+  position: relative;
+  height: 410px;
+  max-width: 80%;
+  right: -80px;
+  border: 1px solid rgb(172, 172, 172, 0.1);
+  border-radius: 5px;
 }
 
 .second-title-project,
@@ -749,6 +774,10 @@ p {
   .mockup-img4,
   .mockup-img5 {
     width: 100%;
+  }
+
+  .mockup-img2 {
+    height: 180px;
   }
 
   .social-container {
