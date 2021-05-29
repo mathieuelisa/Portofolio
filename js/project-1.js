@@ -42,7 +42,6 @@ for (let i = 0; i < elems.length; i++) {
    })
 }
 
-
 // Animation button on view link
 const socialButton = document.querySelectorAll(".myFooterButton")
 
