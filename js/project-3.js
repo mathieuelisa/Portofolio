@@ -2,6 +2,7 @@
 const cursor = document.querySelector(".cursor")
 const cursorCenter = document.querySelector(".cursorCenter")
 
+//Movements
 document.addEventListener("mousemove", function(e){
 
     let x = e.pageX;
@@ -51,12 +52,10 @@ for (let i = 0; i < socialButton.length; i++) {
     socialButton[i].addEventListener("mouseenter", function(){
         cursor.classList.add("transparent")
         cursorCenter.classList.remove("cursorCenter")
-        cursorCenter.classList.add("black")
     });
 
     socialButton[i].addEventListener("mouseleave", function(){
         cursor.classList.remove("transparent")
         cursorCenter.classList.add("cursorCenter")
-        cursorCenter.classList.remove("black")
     });
 }

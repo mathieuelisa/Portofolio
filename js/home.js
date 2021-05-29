@@ -14,7 +14,7 @@ let app = {
     linkProject : document.querySelectorAll(".link-project"),
 
     handleTop : () =>{
-        document.addEventListener("scroll", function(){
+        document.addEventListener("scroll", () =>{
             let result = app.rootElement.scrollHeight - app.rootElement.clientHeight
 
             if((app.rootElement.scrollTop / result) > 0.82){
@@ -92,30 +92,30 @@ let app = {
             app.cursor.classList.add("cursorMail")
             app.cursorCenter.classList.remove("cursorCenter")
         })
-        app.mail.addEventListener("mouseleave", function(){
+        app.mail.addEventListener("mouseleave", () =>{
             app.cursor.classList.remove("cursorMail")
             app.cursorCenter.classList.add("cursorCenter")
     })
     },
     animationOnButtonToTheTop : () =>{
-        app.toTheTop.addEventListener("mouseenter", function(){
+        app.toTheTop.addEventListener("mouseenter", () =>{
             app.cursor.classList.add("cursorMail")
             app.cursorCenter.classList.remove("cursorCenter")
         })
-        app.toTheTop.addEventListener("mouseleave", function(){
+        app.toTheTop.addEventListener("mouseleave", () =>{
             app.cursor.classList.remove("cursorMail")
             app.cursorCenter.classList.add("cursorCenter")
         })
     },
     animationOnSocialLink : () =>{
         for (let i = 0; i < app.socialLink.length; i++) {
-            app.socialLink[i].addEventListener("mouseenter", function(){
+            app.socialLink[i].addEventListener("mouseenter", () =>{
                 app.cursor.classList.add("cursorMail")
                 app.cursorCenter.classList.remove("cursorCenter")
             });
         }
         for (let i = 0; i < app.socialLink.length; i++) {
-            app.socialLink[i].addEventListener("mouseleave", function(){
+            app.socialLink[i].addEventListener("mouseleave", () =>{
                 app.cursor.classList.remove("cursorMail")
                 app.cursorCenter.classList.add("cursorCenter")
             });
@@ -123,14 +123,14 @@ let app = {
     },
     animationOnProjects : () =>{
         for (let i = 0; i < app.linkProject.length; i++) {
-            app.linkProject[i].addEventListener("mouseenter", function(){
+            app.linkProject[i].addEventListener("mouseenter", () =>{
                 app.cursor.classList.add("cursorMail")
                 app.cursorCenter.classList.remove("cursorCenter")
                 app.textCursor.className = "cursorExplore"
             });
         }
         for (let i = 0; i < app.linkProject.length; i++) {
-            app.linkProject[i].addEventListener("mouseleave", function(){
+            app.linkProject[i].addEventListener("mouseleave", () =>{
                 app.cursor.classList.remove("cursorMail")
                 app.cursorCenter.classList.add("cursorCenter")
                 app.textCursor.className ="textCursor"
@@ -138,7 +138,7 @@ let app = {
         }
     },
     effectsOnCursor: () =>{
-        document.addEventListener("click", function(){
+        document.addEventListener("click", () =>{
             app.cursor.classList.add("expand")
         
             setTimeout(() => {
