@@ -34,7 +34,7 @@ let app = {
             })
         })
     },
-    changeName : () =>{
+    changeNameParts : () =>{
         document.addEventListener("scroll", function(){
             let scrollBarHome = document.querySelector(".scroll-bar-home")
             let scrollBarAbout = document.querySelector(".scroll-bar-about")
@@ -251,7 +251,7 @@ gsap.fromTo(folio,5, {scrollTrigger: folio, opacity:0}, {scrollTrigger: folio, o
         app.animationOnSocialLink(),
         app.animationOnProjects(),
         app.effectsOnCursor(),
-        app.changeName(),
+        app.changeNameParts(),
         app.gsapAnimation()
     },
 }
