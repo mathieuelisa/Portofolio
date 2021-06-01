@@ -3,7 +3,7 @@ let app = {
     cursorCenter : document.querySelector(".cursorCenter"),
     socialButton : document.querySelectorAll(".myFooterButton"),
 
-    mouseCursor : () =>{
+    mouseCursor: () =>{
         document.addEventListener("mousemove", function(e){
             let x = e.pageX;
             let y = e.pageY
@@ -15,7 +15,7 @@ let app = {
             app.cursorCenter.setAttribute("style", "top: " + (b-3) + "px; left: " + (c-3) +"px")
         });
     },
-    hamburgerMenu : () =>{
+    hamburgerMenu: () =>{
         const burger = document.querySelector(".hamburger")
         const myBody = document.querySelector("body")
         const myNav = document.querySelector("nav")
@@ -54,7 +54,7 @@ let app = {
             });
         };
     },
-    init : () =>{
+    init: () =>{
         app.mouseCursor(),
         app.hamburgerMenu(),
         app.effectsOnMenu(),
@@ -62,4 +62,9 @@ let app = {
     }
 }
 
-app.init()
+document.addEventListener("DOMContentLoaded", app.init)
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});

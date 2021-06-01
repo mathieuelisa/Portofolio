@@ -13,7 +13,7 @@ let app = {
     socialLink : document.querySelectorAll(".social-link"),
     linkProject : document.querySelectorAll(".link-project"),
 
-    handleTop : () =>{
+    handleTop: () =>{
         document.addEventListener("scroll", () =>{
             let result = app.rootElement.scrollHeight - app.rootElement.clientHeight
 
@@ -26,7 +26,7 @@ let app = {
             }
         });
     },
-    backToTheTop : () =>{
+    backToTheTop: () =>{
        app.buttonScrollTop.addEventListener("click", ()=>{
             app.rootElement.scrollTo({
                 top : 0,
@@ -34,7 +34,7 @@ let app = {
             });
         });
     },
-    changeNameParts : () =>{
+    changeNameParts: () =>{
         document.addEventListener("scroll", function(){
             let scrollBarHome = document.querySelector(".scroll-bar-home")
             let scrollBarAbout = document.querySelector(".scroll-bar-about")
@@ -71,24 +71,24 @@ let app = {
         });
     },
     mouseCursor: () =>{
-        document.addEventListener("mousemove", function(e){
-            let x = e.pageX;
-            let y = e.pageY;
-            app.cursor.setAttribute("style", "top: " + (y-15) + "px; left: " + (x-15) + "px");
+        document.addEventListener("mousemove", (event1) =>{
+            let xAxe = event1.pageX;
+            let yAxe = event1.pageY;
+            app.cursor.setAttribute("style", "top: " + (yAxe-15) + "px; left: " + (xAxe-15) + "px");
         });
-        document.addEventListener("mousemove", function(a){
-            let c = a.pageX
-            let b = a.pageY
-            app.cursorCenter.setAttribute("style", "top: " + (b-3) + "px; left: " + (c-3) +"px")
+        document.addEventListener("mousemove", (event2) =>{
+            let x = event2.pageX
+            let b = event2.pageY
+            app.cursorCenter.setAttribute("style", "top: " + (b-3) + "px; left: " + (x-3) +"px")
         });
-        document.addEventListener("mousemove", function(e){
-            let x = e.pageX;
-            let y = e.pageY;
+        document.addEventListener("mousemove", (event3) =>{
+            let x = event3.pageX;
+            let y = event3.pageY;
             app.textCursor.setAttribute("style", "top: " + (y-75) + "px; left: " + (x-5) + "px")
         });
     },
     animationOnMail: () =>{
-        app.mail.addEventListener("mouseenter", function(){
+        app.mail.addEventListener("mouseenter", () =>{
             app.cursor.classList.add("cursorMail")
             app.cursorCenter.classList.remove("cursorCenter")
         app.mail.addEventListener("mouseleave", () =>{
@@ -97,7 +97,7 @@ let app = {
                 });
             });
     },
-    animationOnButtonToTheTop : () =>{
+    animationOnButtonToTheTop: () =>{
         app.toTheTop.addEventListener("mouseenter", () =>{
             app.cursor.classList.add("cursorMail")
             app.cursorCenter.classList.remove("cursorCenter")
@@ -107,7 +107,7 @@ let app = {
                 });
             });
     },
-    animationOnSocialLink : () =>{
+    animationOnSocialLink: () =>{
         for (let i = 0; i < app.socialLink.length; i++) {
             app.socialLink[i].addEventListener("mouseenter", () =>{
                 app.cursor.classList.add("cursorMail")
@@ -119,7 +119,7 @@ let app = {
             });
         };
     },
-    animationOnProjects : () =>{
+    animationOnProjects: () =>{
         for (let i = 0; i < app.linkProject.length; i++) {
             app.linkProject[i].addEventListener("mouseenter", () =>{
                 app.cursor.classList.add("cursorMail")
@@ -150,7 +150,7 @@ let app = {
             false
           );
     },
-    gsapAnimation : function(){
+    gsapAnimation: function(){
         const firstName = document.querySelector(".myName")
         const mainTitle = document.querySelector(".title-first-container")
         const mainText = document.querySelector(".text-first-container")
@@ -252,4 +252,5 @@ gsap.fromTo(folio,5, {scrollTrigger: folio, opacity:0}, {scrollTrigger: folio, o
     },
 }
 
-app.init()
+document.addEventListener("DOMContentLoaded", app.init)
+

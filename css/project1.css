@@ -289,6 +289,16 @@ nav {
   transform: scaleX(0);
 }
 
+.myLine {
+  position: absolute;
+  border-left: 70px solid;
+  bottom: 12px;
+  height: 0.5px;
+  color: #877e7e;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(0);
+}
+
 #line1 {
   bottom: 80px;
   right: 30px;
