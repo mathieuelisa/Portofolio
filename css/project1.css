@@ -370,6 +370,7 @@ nav {
 }
 
 .bloc-text {
+  position: relative;
   width: 80%;
   font-size: 1em;
   background-color: #1b1b1b;

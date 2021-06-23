@@ -27,8 +27,9 @@ let app = {
         });
     },
     effectsOnMenu: () =>{
-        let elems = ["home", "project2", "project3", "project4", "project5"]
+        let elems = ["home", "project1", "project2", "project3", "project4", "project5"]
         let links = ["line1", "line2", "line3", "line4", "line5"]
+        // let links = ["line1"]
 
         for (let i = 0; i < elems.length; i++) {
             let link = document.getElementById(elems[i]);
@@ -64,7 +65,3 @@ let app = {
 
 document.addEventListener("DOMContentLoaded", app.init)
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true
-});

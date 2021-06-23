@@ -15,7 +15,7 @@
     
 </head>
 
-<body>
+<body data-scroll-container>
 
 <!-- Custom Cursor -->
     <div class="cursor"></div>
@@ -63,10 +63,10 @@
                 <h1>WELCOME TO MY WORLD_ </h1>
             </div>
 
-            <div class="slider"></div>
+            <!-- <div class="slider"></div> -->
 
 <!-- Text Description -->
-                <p class="mySecondText">French fullstack developer specialized in javascript.<br><br>
+                <p data-scroll data-scroll-speed="2" class="mySecondText">French fullstack developer specialized in javascript.<br><br>
                    I discovered this world in 2020 as an <span class="important-words">autodidact</span> and in order to consolidate all my knowledge, 
                    i joined the O'clock school in May 2021.<br><br>
                    I started my professionnal life as a salesman and over the years I have moved towards managerial positions.<br>
@@ -97,7 +97,7 @@
         </a>
 
         <div class="mockup-project1">
-            <a class="link-project" href="project-1.html"><img class="mockup-img1" src="images/project-pics/project1.jpg" alt=""></a>
+            <a class="link-project" href="project-1.html"><img data-scroll data-scroll-speed="2" class="mockup-img1" src="images/project-pics/project1.jpg" alt=""></a>
         </div>
 
     </div>
@@ -106,14 +106,14 @@
 <div class="fourth-container">
 
     <a class="title-link" href="project-2.html">
-        <div class="second-title-project">
+        <div data-scroll data-scroll-speed="1" class="second-title-project">
             <h2 class="number" id="number2">/2</h2>
             <h3 class="title-project" id="title2">PROJECT</h3>
         </div>
     </a>
 
     <div class="mockup-project2">
-        <a class="link-project" href="project-2.html"><img class="mockup-img2" src="images/project-pics/project2.jpg" alt=""></a>
+        <a class="link-project" href="project-2.html"><img data-scroll data-scroll-speed="1" class="mockup-img2" src="images/project-pics/project2.jpg" alt=""></a>
     </div>
 
 </div>
@@ -129,7 +129,7 @@
     </a>
 
     <div class="mockup-project3">
-        <a class="link-project" href="project-3.html"><img class="mockup-img3" src="images/mockup2.png" alt=""></a>
+        <a class="link-project" href="project-3.html"><img data-scroll data-scroll-speed="2" class="mockup-img3" src="images/mockup2.png" alt=""></a>
     </div>
 
 </div>
@@ -137,14 +137,14 @@
 <!-- Fourth project -->
 <div class="sixth-container">
     <a class="title-link" href="project-4.html">
-        <div class="fourth-title-project">
+        <div data-scroll data-scroll-speed="2" class="fourth-title-project">
             <h2 class="number" id="number4">/4</h2>
             <h3 class="title-project" id="title4">PROJECT</h3>
         </div>
     </a>
 
     <div class="mockup-project4">
-        <a class="link-project" href="project-4.html"><img class="mockup-img4" src="images/mockup1.png" alt=""></a>
+        <a class="link-project" href="project-4.html"><img data-scroll data-scroll-speed="1" class="mockup-img4" src="images/mockup1.png" alt=""></a>
     </div>
 
 </div>
@@ -160,14 +160,14 @@
     </a>
 
     <div class="mockup-project5">
-        <a class="link-project" href="project-1.html"><img class="mockup-img5" src="images/mockup1.png" alt=""></a>
+        <a class="link-project" href="project-1.html"><img data-scroll data-scroll-speed="1" class="mockup-img5" src="images/mockup1.png" alt=""></a>
     </div>
 
 </div>
 
 <div class="seventh-container">
 
-    <div class="myEmail"><a href="">HELLO@MATHIEUELISA.COM</a></div>
+    <div data-scroll data-scroll-speed="1" class="myEmail"><a href="">HELLO@MATHIEUELISA.COM</a></div>
 
 
     <div class="title-footer">
@@ -178,7 +178,7 @@
         <a href=""></a>
     </div>
 
-    <div class="folio">
+    <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="1" class="folio">
         <p>folio_21</p>
     </div>
 
@@ -198,6 +198,10 @@
 
 <!-- Custom ease GSAP plugin -->
 <script src="plugins/CustomEase.min.js"></script>
+
+<!-- Locomotive scroll -->
+<script src="js/locomotive-scroll.min.js"></script>
+
 <!-- CDN GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
