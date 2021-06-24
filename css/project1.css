@@ -337,7 +337,7 @@ nav {
 
 .container-pics img {
   position: relative;
-  max-width: 65%;
+  width: clamp(582px, 80vw, 950px);
   top: 25px;
   border-radius: 5px;
   border: 1px solid rgb(172, 172, 172, 0.1);
