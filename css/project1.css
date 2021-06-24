@@ -343,6 +343,14 @@ nav {
   border: 1px solid rgb(172, 172, 172, 0.1);
 }
 
+#containe-pics-project3 {
+  position: relative;
+  width: clamp(582px, 80vw, 800px);
+  top: 25px;
+  border-radius: 5px;
+  border: 1px solid rgb(172, 172, 172, 0.1);
+}
+
 /* Second-container */
 
 .second-container {
