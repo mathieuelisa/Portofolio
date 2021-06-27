@@ -279,21 +279,13 @@ nav {
 #line2,
 #line3,
 #line4,
-#line5 {
+#line5,
+#line6 {
   position: absolute;
   border-left: 70px solid;
   bottom: 12px;
   height: 0.5px;
-  color: #877e7e;
-  transition: all 0.5s ease-in-out;
-  transform: scaleX(0);
-}
-
-.myLine {
-  position: absolute;
-  border-left: 70px solid;
-  bottom: 12px;
-  height: 0.5px;
+  right: 50px;
   color: #877e7e;
   transition: all 0.5s ease-in-out;
   transform: scaleX(0);
@@ -301,27 +293,26 @@ nav {
 
 #line1 {
   bottom: 80px;
-  right: 30px;
 }
 
 #line2 {
   bottom: 55px;
-  right: 70px;
 }
 
 #line3 {
   bottom: 30px;
-  right: 70px;
 }
 
 #line4 {
   bottom: 5px;
-  right: 70px;
 }
 
 #line5 {
   bottom: -20px;
-  right: 70px;
+}
+
+#line6 {
+  bottom: -45px;
 }
 
 .text-choice:hover {

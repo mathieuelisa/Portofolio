@@ -129,6 +129,10 @@ html.has-scroll-dragging {
 }
 /* End smooth */
 
+.appear {
+  opacity: 1;
+}
+
 /* Cursor */
 .cursorCenter {
   position: absolute;
