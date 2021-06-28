@@ -1,3 +1,6 @@
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(CustomEase);
+
 const scrollBarHome = document.querySelector(".scroll-bar-home");
 const scrollBarAbout = document.querySelector(".scroll-bar-about");
 const scrollBarProjects = document.querySelector(".scroll-bar-projects");
@@ -18,6 +21,42 @@ const app = {
     app.buttonScrollTop.addEventListener("click", () => {
       app.locomotiveScroll.scrollTo(0); // Ici on utilise la méthode 'scrollTo' de locomotive
     });
+  },
+  gsapAnimation: () => {
+    const firstName = document.querySelector(".myName");
+    const mainTitle = document.querySelector(".title-first-container");
+    const mainText = document.querySelector(".text-first-container");
+    const firstBlock = document.querySelector(".bloc-container2-general");
+
+    CustomEase.create(
+      "myEase",
+      "M0,0 C0,0 -0.003,1.093 0.302,1.048 0.704,0.988 1,1 1,1 "
+    );
+    gsap.fromTo(
+      firstBlock,
+      1.5,
+      { opacity: 0, x: 800 },
+      { opacity: 1, x: 0, ease: "myEase" }
+    );
+
+    gsap.fromTo(
+      firstName,
+      3,
+      { opacity: 0, x: -50 },
+      { opacity: 1, x: 0, delay: 2 }
+    );
+    gsap.fromTo(
+      mainTitle,
+      3,
+      { opacity: 0, x: 50 },
+      { opacity: 1, x: 0, delay: 1.5 }
+    );
+    gsap.fromTo(
+      mainText,
+      3,
+      { opacity: 0, x: 50 },
+      { opacity: 1, x: 0, delay: 1.5 }
+    );
   },
   mouseCursor: (active = true) => {
     if (active) {
@@ -117,6 +156,7 @@ const app = {
   init: function () {
     // Initialisation de scrollBarHome sinon rien est affiché au chargement de la page
     scrollBarHome.style.display = "block";
+    app.gsapAnimation();
     app.initScroll();
     app.animMouse();
     app.backToTheTop();
