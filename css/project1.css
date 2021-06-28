@@ -599,7 +599,7 @@ nav {
 
   .container-pics img {
     left: 0;
-    width: 360px;
+    width: 371px;
   }
 
   .second-container {
@@ -614,14 +614,18 @@ nav {
   }
 
   .bloc-text {
+    position: relative;
+    top: -52px;
     height: 466px;
     width: 85%;
     padding: 45px;
   }
 
   .second-bloc {
+    position: relative;
     width: 85%;
     font-size: 13px;
+    top: -52px;
   }
 
   .phone-bloc {
@@ -645,7 +649,7 @@ nav {
   }
 
   .title-project {
-    top: 15px;
+    top: -40px;
     height: 38px;
     width: 181px;
     font-size: 1.4em;
