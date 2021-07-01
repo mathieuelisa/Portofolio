@@ -127,6 +127,9 @@ nav {
   margin: 0;
   overflow: visible;
   z-index: 99;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .hamburger:hover {
@@ -323,20 +326,11 @@ nav {
   height: 550px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .container-pics img {
   position: relative;
   width: clamp(582px, 80vw, 950px);
-  top: 25px;
-  border-radius: 5px;
-  border: 1px solid rgb(172, 172, 172, 0.1);
-}
-
-#container-pics-project3 {
-  position: relative;
-  width: clamp(582px, 80vw, 800px);
   top: 25px;
   border-radius: 5px;
   border: 1px solid rgb(172, 172, 172, 0.1);
@@ -497,7 +491,6 @@ nav {
   width: 100%;
   height: 400px;
   font-size: 1em;
-  /* background-color: #1b1b1b; */
   background: linear-gradient(#222222, #1c1b1b);
   padding: 80px;
   padding-right: 200px;
@@ -590,16 +583,13 @@ nav {
 
   .container {
     height: 30vh;
-    width: 350px;
-  }
-
-  .container-pics {
-    height: 136px;
+    width: 100%;
   }
 
   .container-pics img {
-    left: 0;
-    width: 371px;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
   }
 
   .second-container {
