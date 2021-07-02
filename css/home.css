@@ -887,4 +887,8 @@ html.has-scroll-dragging {
   .slider {
     display: none;
   }
+
+  .folio {
+    width: 12px;
+  }
 }

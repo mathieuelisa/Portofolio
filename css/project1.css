@@ -586,10 +586,14 @@ nav {
     width: 100%;
   }
 
+  .container-pics {
+    height: 245px;
+  }
+
   .container-pics img {
     top: 0;
     width: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
   }
 
   .second-container {
